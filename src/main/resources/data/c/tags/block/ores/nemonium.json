@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "everythingores:nemonium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_nemonium_ore",
+      "required": false
+    }
+  ]
+}

@@ -1,1 +1,8 @@
-{"values": ["everythingores:bronze_shovel"]}
+{
+  "values": [
+    {
+      "id": "everythingores:bronze_shovel",
+      "required": false
+    }
+  ]
+}

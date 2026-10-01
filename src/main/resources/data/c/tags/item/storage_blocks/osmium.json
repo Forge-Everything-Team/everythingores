@@ -1,5 +1,8 @@
 {
   "values": [
-    "everythingores:osmium_block"
+    {
+      "id": "everythingores:osmium_block",
+      "required": false
+    }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "everythingores:block/red_alloy_block"
+      "model": "everythingores:block/storage/red_alloy_block"
     }
   }
 }

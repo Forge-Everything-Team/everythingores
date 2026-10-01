@@ -1,1 +1,24 @@
-{ "values": ["everythingores:zinc_ore", "everythingores:deepslate_zinc_ore"] }
+{
+  "values": [
+    {
+      "id": "everythingores:zinc_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_zinc_ore",
+      "required": false
+    }
+  ]
+}

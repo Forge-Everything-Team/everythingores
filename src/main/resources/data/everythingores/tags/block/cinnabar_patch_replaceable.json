@@ -1,0 +1,9 @@
+{
+  "values": [
+    "#minecraft:base_stone_overworld",
+    {
+      "id": "everythingores:sulfur_block",
+      "required": false
+    }
+  ]
+}

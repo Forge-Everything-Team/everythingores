@@ -1,5 +1,8 @@
 {
   "values": [
-    "everythingores:bismuth_ingot"
+    {
+      "id": "everythingores:bismuth_ingot",
+      "required": false
+    }
   ]
 }

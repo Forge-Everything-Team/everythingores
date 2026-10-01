@@ -1,5 +1,8 @@
 {
   "values": [
-    "everythingores:lead_block"
+    {
+      "id": "everythingores:lead_block",
+      "required": false
+    }
   ]
 }

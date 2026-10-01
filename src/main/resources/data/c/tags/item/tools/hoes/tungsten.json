@@ -1,1 +1,8 @@
-{"values": ["everythingores:tungsten_hoe"]}
+{
+  "values": [
+    {
+      "id": "everythingores:tungsten_hoe",
+      "required": false
+    }
+  ]
+}

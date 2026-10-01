@@ -1,0 +1,12 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "everythingores:material_enabled",
+      "material": "aluminum"
+    }
+  ],
+  "type": "neoforge:add_features",
+  "biomes": "#everythingores:is_aether",
+  "features": "everythingores:holystone_aluminum_ore",
+  "step": "underground_ores"
+}

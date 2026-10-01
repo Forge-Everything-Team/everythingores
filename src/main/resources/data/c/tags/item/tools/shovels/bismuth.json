@@ -1,1 +1,8 @@
-{"values": ["everythingores:bismuth_shovel"]}
+{
+  "values": [
+    {
+      "id": "everythingores:bismuth_shovel",
+      "required": false
+    }
+  ]
+}

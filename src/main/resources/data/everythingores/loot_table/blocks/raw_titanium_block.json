@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "everythingores:material_enabled",
+      "material": "titanium"
+    }
+  ],
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "everythingores:raw_titanium_block"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ]
+    }
+  ]
+}

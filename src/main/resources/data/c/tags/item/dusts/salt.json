@@ -1,1 +1,8 @@
-{ "values": ["everythingores:salt"] }
+{
+  "values": [
+    {
+      "id": "everythingores:salt",
+      "required": false
+    }
+  ]
+}

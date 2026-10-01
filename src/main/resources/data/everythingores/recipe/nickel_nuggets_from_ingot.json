@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "everythingores:material_enabled",
+      "material": "nickel"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:ingots/nickel"
+    }
+  ],
+  "result": {
+    "id": "everythingores:nickel_nugget",
+    "count": 9
+  }
+}

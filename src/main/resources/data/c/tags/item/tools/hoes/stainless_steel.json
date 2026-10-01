@@ -1,1 +1,8 @@
-{"values": ["everythingores:stainless_steel_hoe"]}
+{
+  "values": [
+    {
+      "id": "everythingores:stainless_steel_hoe",
+      "required": false
+    }
+  ]
+}

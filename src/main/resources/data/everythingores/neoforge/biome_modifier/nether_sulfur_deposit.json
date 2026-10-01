@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "everythingores:material_enabled",
+      "material": "sulfur"
+    },
+    {
+      "type": "everythingores:sulfur_caves",
+      "enabled": true
+    }
+  ],
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_nether",
+  "features": "everythingores:nether_sulfur_deposit",
+  "step": "underground_ores"
+}

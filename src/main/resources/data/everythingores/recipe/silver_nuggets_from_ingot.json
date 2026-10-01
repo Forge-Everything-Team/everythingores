@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "everythingores:material_enabled",
+      "material": "silver"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:ingots/silver"
+    }
+  ],
+  "result": {
+    "id": "everythingores:silver_nugget",
+    "count": 9
+  }
+}

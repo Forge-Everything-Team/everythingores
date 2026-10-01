@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "everythingores:titanium_dust",
+      "required": false
+    },
+    {
+      "id": "electrodynamics:dusttitanium",
+      "required": false
+    },
+    {
+      "id": "modern_industrialization:titanium_dust",
+      "required": false
+    }
+  ]
+}

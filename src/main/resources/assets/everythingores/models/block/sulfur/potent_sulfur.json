@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "everythingores:block/sulfur/potent_sulfur"
+  }
+}

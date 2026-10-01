@@ -1,5 +1,8 @@
 {
   "values": [
-    "everythingores:stainless_steel_dust"
+    {
+      "id": "everythingores:stainless_steel_dust",
+      "required": false
+    }
   ]
 }

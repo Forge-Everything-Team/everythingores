@@ -1,4 +1,14 @@
 {
+  "neoforge:conditions": [
+    {
+      "type": "everythingores:material_enabled",
+      "material": "sulfur"
+    },
+    {
+      "type": "everythingores:sulfur_caves",
+      "enabled": false
+    }
+  ],
   "type": "minecraft:ore",
   "config": {
     "size": 7,

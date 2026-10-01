@@ -1,6 +1,24 @@
 {
   "values": [
-    "everythingores:osmium_ore",
-    "everythingores:deepslate_osmium_ore"
+    {
+      "id": "everythingores:osmium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_osmium_ore",
+      "required": false
+    }
   ]
 }

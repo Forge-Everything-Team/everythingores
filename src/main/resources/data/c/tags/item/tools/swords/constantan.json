@@ -1,1 +1,8 @@
-{"values": ["everythingores:constantan_sword"]}
+{
+  "values": [
+    {
+      "id": "everythingores:constantan_sword",
+      "required": false
+    }
+  ]
+}

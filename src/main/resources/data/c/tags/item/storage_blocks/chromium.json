@@ -1,5 +1,8 @@
 {
   "values": [
-    "everythingores:chromium_block"
+    {
+      "id": "everythingores:chromium_block",
+      "required": false
+    }
   ]
 }

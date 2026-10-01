@@ -1,1 +1,8 @@
-{"values": ["everythingores:invar_sword"]}
+{
+  "values": [
+    {
+      "id": "everythingores:invar_sword",
+      "required": false
+    }
+  ]
+}

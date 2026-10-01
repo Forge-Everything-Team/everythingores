@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "everythingores:lithium_dust",
+      "required": false
+    },
+    {
+      "id": "electrodynamics:dustlithium",
+      "required": false
+    },
+    {
+      "id": "mekanism:dust_lithium",
+      "required": false
+    }
+  ]
+}

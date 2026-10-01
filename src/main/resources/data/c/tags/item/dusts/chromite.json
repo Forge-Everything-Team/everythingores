@@ -1,5 +1,8 @@
 {
   "values": [
-    "everythingores:chromite_dust"
+    {
+      "id": "everythingores:chromite_dust",
+      "required": false
+    }
   ]
 }

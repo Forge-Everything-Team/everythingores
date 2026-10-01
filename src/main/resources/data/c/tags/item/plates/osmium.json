@@ -1,1 +1,8 @@
-{"values": ["everythingores:osmium_plate"]}
+{
+  "values": [
+    {
+      "id": "everythingores:osmium_plate",
+      "required": false
+    }
+  ]
+}

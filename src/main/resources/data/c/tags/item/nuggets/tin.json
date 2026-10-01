@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "everythingores:tin_nugget",
+      "required": false
+    },
+    {
+      "id": "electrodynamics:nuggettin",
+      "required": false
+    },
+    {
+      "id": "modern_industrialization:tin_nugget",
+      "required": false
+    }
+  ]
+}

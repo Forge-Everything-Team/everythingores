@@ -1,6 +1,25 @@
 {
+  "neoforge:conditions": [
+    {
+      "type": "everythingores:material_enabled",
+      "material": "sulfur"
+    },
+    {
+      "type": "everythingores:sulfur_caves",
+      "enabled": false
+    }
+  ],
   "type": "neoforge:add_features",
-  "biomes": "#minecraft:is_overworld",
+  "biomes": {
+    "type": "neoforge:and",
+    "values": [
+      "#minecraft:is_overworld",
+      {
+        "type": "neoforge:not",
+        "value": "#everythingores:is_aether"
+      }
+    ]
+  },
   "features": "everythingores:sulfur_ore",
   "step": "underground_ores"
 }

@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "everythingores:material_enabled",
+      "material": "nickel"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "c:nuggets/nickel"
+    }
+  },
+  "result": {
+    "id": "everythingores:nickel_ingot",
+    "count": 1
+  }
+}

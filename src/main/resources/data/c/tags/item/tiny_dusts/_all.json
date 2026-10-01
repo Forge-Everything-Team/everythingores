@@ -1,29 +1,104 @@
 {
   "values": [
-    "everythingores:tiny_iron_dust",
-    "everythingores:tiny_gold_dust",
-    "everythingores:tiny_copper_dust",
-    "everythingores:tiny_tin_dust",
-    "everythingores:tiny_lead_dust",
-    "everythingores:tiny_nickel_dust",
-    "everythingores:tiny_aluminum_dust",
-    "everythingores:tiny_zinc_dust",
-    "everythingores:tiny_silver_dust",
-    "everythingores:tiny_uranium_dust",
-    "everythingores:tiny_platinum_dust",
-    "everythingores:tiny_osmium_dust",
-    "everythingores:tiny_bismuth_dust",
-    "everythingores:tiny_tungsten_dust",
-    "everythingores:tiny_iridium_dust",
-    "everythingores:tiny_sulfur_dust",
-    "everythingores:tiny_fluorite_dust",
-    "everythingores:tiny_steel_dust",
-    "everythingores:tiny_electrum_dust",
-    "everythingores:tiny_constantan_dust",
-    "everythingores:tiny_invar_dust",
-    "everythingores:tiny_bronze_dust",
-    "everythingores:tiny_stainless_steel_dust",
-		"everythingores:tiny_chromium_dust",
-		"everythingores:tiny_chromite_dust"
+    {
+      "id": "everythingores:tiny_iron_dust",
+      "required": false
+    },
+    {
+      "id": "everythingores:tiny_gold_dust",
+      "required": false
+    },
+    {
+      "id": "everythingores:tiny_copper_dust",
+      "required": false
+    },
+    {
+      "id": "everythingores:tiny_tin_dust",
+      "required": false
+    },
+    {
+      "id": "everythingores:tiny_lead_dust",
+      "required": false
+    },
+    {
+      "id": "everythingores:tiny_nickel_dust",
+      "required": false
+    },
+    {
+      "id": "everythingores:tiny_aluminum_dust",
+      "required": false
+    },
+    {
+      "id": "everythingores:tiny_zinc_dust",
+      "required": false
+    },
+    {
+      "id": "everythingores:tiny_silver_dust",
+      "required": false
+    },
+    {
+      "id": "everythingores:tiny_uranium_dust",
+      "required": false
+    },
+    {
+      "id": "everythingores:tiny_platinum_dust",
+      "required": false
+    },
+    {
+      "id": "everythingores:tiny_osmium_dust",
+      "required": false
+    },
+    {
+      "id": "everythingores:tiny_bismuth_dust",
+      "required": false
+    },
+    {
+      "id": "everythingores:tiny_tungsten_dust",
+      "required": false
+    },
+    {
+      "id": "everythingores:tiny_iridium_dust",
+      "required": false
+    },
+    {
+      "id": "everythingores:tiny_sulfur_dust",
+      "required": false
+    },
+    {
+      "id": "everythingores:tiny_fluorite_dust",
+      "required": false
+    },
+    {
+      "id": "everythingores:tiny_steel_dust",
+      "required": false
+    },
+    {
+      "id": "everythingores:tiny_electrum_dust",
+      "required": false
+    },
+    {
+      "id": "everythingores:tiny_constantan_dust",
+      "required": false
+    },
+    {
+      "id": "everythingores:tiny_invar_dust",
+      "required": false
+    },
+    {
+      "id": "everythingores:tiny_bronze_dust",
+      "required": false
+    },
+    {
+      "id": "everythingores:tiny_stainless_steel_dust",
+      "required": false
+    },
+    {
+      "id": "everythingores:tiny_chromium_dust",
+      "required": false
+    },
+    {
+      "id": "everythingores:tiny_chromite_dust",
+      "required": false
+    }
   ]
 }

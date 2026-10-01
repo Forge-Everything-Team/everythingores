@@ -1,0 +1,12 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "everythingores:material_enabled",
+      "material": "iron"
+    }
+  ],
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_nether",
+  "features": "everythingores:nether_iron_ore",
+  "step": "underground_ores"
+}

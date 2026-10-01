@@ -1,1 +1,8 @@
-{ "values": ["everythingores:zinc_ingot"] }
+{
+  "values": [
+    {
+      "id": "everythingores:zinc_ingot",
+      "required": false
+    }
+  ]
+}

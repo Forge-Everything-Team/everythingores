@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "everythingores:material_enabled",
+      "material": "lithium"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "c:raw_materials/lithium"
+    }
+  },
+  "result": {
+    "id": "everythingores:raw_lithium_block",
+    "count": 1
+  }
+}

@@ -1,1 +1,12 @@
-{ "values": ["everythingores:saltpeter_ore", "everythingores:deepslate_saltpeter_ore"] }
+{
+  "values": [
+    {
+      "id": "everythingores:saltpeter_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_saltpeter_ore",
+      "required": false
+    }
+  ]
+}

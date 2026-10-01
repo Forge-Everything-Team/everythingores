@@ -1,6 +1,12 @@
 {
   "values": [
-    "everythingores:fluorite_ore",
-    "everythingores:deepslate_fluorite_ore"
+    {
+      "id": "everythingores:fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_fluorite_ore",
+      "required": false
+    }
   ]
 }

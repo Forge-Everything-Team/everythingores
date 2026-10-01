@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "everythingores:aluminum_nugget",
+      "required": false
+    },
+    {
+      "id": "modern_industrialization:aluminum_nugget",
+      "required": false
+    },
+    {
+      "id": "tfmg:aluminum_nugget",
+      "required": false
+    },
+    {
+      "id": "xycraft_world:aluminum_nugget",
+      "required": false
+    }
+  ]
+}

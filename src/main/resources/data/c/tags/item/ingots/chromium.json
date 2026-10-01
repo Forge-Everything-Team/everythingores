@@ -1,5 +1,8 @@
 {
   "values": [
-    "everythingores:chromium_ingot"
+    {
+      "id": "everythingores:chromium_ingot",
+      "required": false
+    }
   ]
 }

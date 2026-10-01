@@ -1,1 +1,8 @@
-{"values": ["everythingores:tungsten_pickaxe"]}
+{
+  "values": [
+    {
+      "id": "everythingores:tungsten_pickaxe",
+      "required": false
+    }
+  ]
+}

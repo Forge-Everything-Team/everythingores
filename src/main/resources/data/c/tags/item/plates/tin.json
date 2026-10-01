@@ -1,1 +1,8 @@
-{"values": ["everythingores:tin_plate"]}
+{
+  "values": [
+    {
+      "id": "everythingores:tin_plate",
+      "required": false
+    }
+  ]
+}

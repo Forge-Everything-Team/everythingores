@@ -1,0 +1,12 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "everythingores:fluid_enabled",
+      "fluid": "crude_oil"
+    }
+  ],
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": "everythingores:crude_oil_geyser",
+  "step": "underground_decoration"
+}

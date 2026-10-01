@@ -1,6 +1,24 @@
 {
   "values": [
-    "everythingores:iridium_ore",
-    "everythingores:deepslate_iridium_ore"
+    {
+      "id": "everythingores:iridium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_iridium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_iridium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_iridium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_iridium_ore",
+      "required": false
+    }
   ]
 }

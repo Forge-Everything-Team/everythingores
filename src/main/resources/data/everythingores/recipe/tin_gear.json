@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "everythingores:material_enabled",
+      "material": "tin"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " t ",
+    "tnt",
+    " t "
+  ],
+  "key": {
+    "t": {
+      "tag": "c:ingots/tin"
+    },
+    "n": {
+      "item": "minecraft:iron_nugget"
+    }
+  },
+  "result": {
+    "id": "everythingores:tin_gear",
+    "count": 1
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "everythingores:nickel_nugget",
+      "required": false
+    },
+    {
+      "id": "modern_industrialization:nickel_nugget",
+      "required": false
+    },
+    {
+      "id": "oritech:nickel_nugget",
+      "required": false
+    },
+    {
+      "id": "tfmg:nickel_nugget",
+      "required": false
+    }
+  ]
+}

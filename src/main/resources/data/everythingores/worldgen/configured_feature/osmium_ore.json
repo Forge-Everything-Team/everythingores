@@ -1,4 +1,10 @@
 {
+  "neoforge:conditions": [
+    {
+      "type": "everythingores:material_enabled",
+      "material": "osmium"
+    }
+  ],
   "type": "minecraft:ore",
   "config": {
     "size": 9,

@@ -1,25 +1,88 @@
 {
   "values": [
-    "everythingores:iron_plate",
-    "everythingores:gold_plate",
-    "everythingores:copper_plate",
-    "everythingores:tin_plate",
-    "everythingores:lead_plate",
-    "everythingores:nickel_plate",
-    "everythingores:aluminum_plate",
-    "everythingores:zinc_plate",
-    "everythingores:silver_plate",
-    "everythingores:uranium_plate",
-    "everythingores:platinum_plate",
-    "everythingores:osmium_plate",
-    "everythingores:bismuth_plate",
-    "everythingores:tungsten_plate",
-    "everythingores:iridium_plate",
-    "everythingores:steel_plate",
-    "everythingores:electrum_plate",
-    "everythingores:constantan_plate",
-    "everythingores:invar_plate",
-    "everythingores:bronze_plate",
-    "everythingores:stainless_steel_plate"
+    {
+      "id": "everythingores:iron_plate",
+      "required": false
+    },
+    {
+      "id": "everythingores:gold_plate",
+      "required": false
+    },
+    {
+      "id": "everythingores:copper_plate",
+      "required": false
+    },
+    {
+      "id": "everythingores:tin_plate",
+      "required": false
+    },
+    {
+      "id": "everythingores:lead_plate",
+      "required": false
+    },
+    {
+      "id": "everythingores:nickel_plate",
+      "required": false
+    },
+    {
+      "id": "everythingores:aluminum_plate",
+      "required": false
+    },
+    {
+      "id": "everythingores:zinc_plate",
+      "required": false
+    },
+    {
+      "id": "everythingores:silver_plate",
+      "required": false
+    },
+    {
+      "id": "everythingores:uranium_plate",
+      "required": false
+    },
+    {
+      "id": "everythingores:platinum_plate",
+      "required": false
+    },
+    {
+      "id": "everythingores:osmium_plate",
+      "required": false
+    },
+    {
+      "id": "everythingores:bismuth_plate",
+      "required": false
+    },
+    {
+      "id": "everythingores:tungsten_plate",
+      "required": false
+    },
+    {
+      "id": "everythingores:iridium_plate",
+      "required": false
+    },
+    {
+      "id": "everythingores:steel_plate",
+      "required": false
+    },
+    {
+      "id": "everythingores:electrum_plate",
+      "required": false
+    },
+    {
+      "id": "everythingores:constantan_plate",
+      "required": false
+    },
+    {
+      "id": "everythingores:invar_plate",
+      "required": false
+    },
+    {
+      "id": "everythingores:bronze_plate",
+      "required": false
+    },
+    {
+      "id": "everythingores:stainless_steel_plate",
+      "required": false
+    }
   ]
 }

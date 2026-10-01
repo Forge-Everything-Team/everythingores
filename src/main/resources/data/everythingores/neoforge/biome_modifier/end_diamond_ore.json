@@ -1,0 +1,12 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "everythingores:material_enabled",
+      "material": "diamond"
+    }
+  ],
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_end",
+  "features": "everythingores:end_diamond_ore",
+  "step": "underground_ores"
+}

@@ -1,6 +1,7 @@
 package dev.forgeeverything.everythingores.registry;
 
 import dev.forgeeverything.everythingores.EverythingOres;
+import dev.forgeeverything.everythingores.config.EOConfig;
 import net.minecraft.world.item.*;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -8,7 +9,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 /**
  * Registers every tool owned by Everything Ores.
  *
- * 16 materials × 5 tools = 80 items.
+ * 14 materials × 5 tools = 70 items.
  *
  * This class uses its OWN DeferredRegister.Items so that calling
  * EOTools.ITEMS.register(modEventBus) in the mod constructor forces
@@ -32,30 +33,35 @@ public class EOTools {
     // ── Helpers ───────────────────────────────────────────────────────────────
 
     private static DeferredItem<SwordItem> sword(String mat, net.minecraft.world.item.Tier tier) {
+        if (!EOConfig.isRegistrationEnabled(mat + "_sword")) return null;
         return ITEMS.register(mat + "_sword",
                 () -> new SwordItem(tier,
                         new Item.Properties().attributes(SwordItem.createAttributes(tier, 3, -2.4f))));
     }
 
     private static DeferredItem<PickaxeItem> pickaxe(String mat, net.minecraft.world.item.Tier tier) {
+        if (!EOConfig.isRegistrationEnabled(mat + "_pickaxe")) return null;
         return ITEMS.register(mat + "_pickaxe",
                 () -> new PickaxeItem(tier,
                         new Item.Properties().attributes(PickaxeItem.createAttributes(tier, 1, -2.8f))));
     }
 
     private static DeferredItem<AxeItem> axe(String mat, net.minecraft.world.item.Tier tier) {
+        if (!EOConfig.isRegistrationEnabled(mat + "_axe")) return null;
         return ITEMS.register(mat + "_axe",
                 () -> new AxeItem(tier,
                         new Item.Properties().attributes(AxeItem.createAttributes(tier, 6.0f, -3.1f))));
     }
 
     private static DeferredItem<ShovelItem> shovel(String mat, net.minecraft.world.item.Tier tier) {
+        if (!EOConfig.isRegistrationEnabled(mat + "_shovel")) return null;
         return ITEMS.register(mat + "_shovel",
                 () -> new ShovelItem(tier,
                         new Item.Properties().attributes(ShovelItem.createAttributes(tier, 1.5f, -3.0f))));
     }
 
     private static DeferredItem<HoeItem> hoe(String mat, net.minecraft.world.item.Tier tier) {
+        if (!EOConfig.isRegistrationEnabled(mat + "_hoe")) return null;
         return ITEMS.register(mat + "_hoe",
                 () -> new HoeItem(tier,
                         new Item.Properties().attributes(HoeItem.createAttributes(tier, -2, 0.0f))));
@@ -78,15 +84,6 @@ public class EOTools {
     public static final DeferredItem<AxeItem>     ALUMINUM_AXE     = axe    ("aluminum", EOTiers.ALUMINUM);
     public static final DeferredItem<ShovelItem>  ALUMINUM_SHOVEL  = shovel ("aluminum", EOTiers.ALUMINUM);
     public static final DeferredItem<HoeItem>     ALUMINUM_HOE     = hoe    ("aluminum", EOTiers.ALUMINUM);
-
-    // ================================================================
-    // ELECTRUM  (gold-like: fragile, fast, very enchantable)
-    // ================================================================
-    public static final DeferredItem<SwordItem>   ELECTRUM_SWORD   = sword  ("electrum", EOTiers.ELECTRUM);
-    public static final DeferredItem<PickaxeItem> ELECTRUM_PICKAXE = pickaxe("electrum", EOTiers.ELECTRUM);
-    public static final DeferredItem<AxeItem>     ELECTRUM_AXE     = axe    ("electrum", EOTiers.ELECTRUM);
-    public static final DeferredItem<ShovelItem>  ELECTRUM_SHOVEL  = shovel ("electrum", EOTiers.ELECTRUM);
-    public static final DeferredItem<HoeItem>     ELECTRUM_HOE     = hoe    ("electrum", EOTiers.ELECTRUM);
 
     // ================================================================
     // NICKEL  (iron-equivalent mining)
@@ -152,6 +149,15 @@ public class EOTools {
     public static final DeferredItem<HoeItem>     STAINLESS_STEEL_HOE     = hoe    ("stainless_steel", EOTiers.STAINLESS_STEEL);
 
     // ================================================================
+    // OSMIUM  (diamond-equivalent mining, hard hitting, poor enchantability)
+    // ================================================================
+    public static final DeferredItem<SwordItem>   OSMIUM_SWORD   = sword  ("osmium", EOTiers.OSMIUM);
+    public static final DeferredItem<PickaxeItem> OSMIUM_PICKAXE = pickaxe("osmium", EOTiers.OSMIUM);
+    public static final DeferredItem<AxeItem>     OSMIUM_AXE     = axe    ("osmium", EOTiers.OSMIUM);
+    public static final DeferredItem<ShovelItem>  OSMIUM_SHOVEL  = shovel ("osmium", EOTiers.OSMIUM);
+    public static final DeferredItem<HoeItem>     OSMIUM_HOE     = hoe    ("osmium", EOTiers.OSMIUM);
+
+    // ================================================================
     // PLATINUM  (diamond-equivalent mining, high enchantability)
     // ================================================================
     public static final DeferredItem<SwordItem>   PLATINUM_SWORD   = sword  ("platinum", EOTiers.PLATINUM);
@@ -177,4 +183,13 @@ public class EOTools {
     public static final DeferredItem<AxeItem>     IRIDIUM_AXE     = axe    ("iridium", EOTiers.IRIDIUM);
     public static final DeferredItem<ShovelItem>  IRIDIUM_SHOVEL  = shovel ("iridium", EOTiers.IRIDIUM);
     public static final DeferredItem<HoeItem>     IRIDIUM_HOE     = hoe    ("iridium", EOTiers.IRIDIUM);
+
+		// ================================================================
+		// NEMONIUM  (Everything Ores exclusive — post-boss end game tier)
+		// ================================================================
+		public static final DeferredItem<SwordItem>   NEMONIUM_SWORD   = sword  ("nemonium", EOTiers.NEMONIUM);
+		public static final DeferredItem<PickaxeItem> NEMONIUM_PICKAXE = pickaxe("nemonium", EOTiers.NEMONIUM);
+		public static final DeferredItem<AxeItem>     NEMONIUM_AXE     = axe    ("nemonium", EOTiers.NEMONIUM);
+		public static final DeferredItem<ShovelItem>  NEMONIUM_SHOVEL  = shovel ("nemonium", EOTiers.NEMONIUM);
+		public static final DeferredItem<HoeItem>     NEMONIUM_HOE     = hoe    ("nemonium", EOTiers.NEMONIUM);
 }

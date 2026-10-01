@@ -1,1 +1,24 @@
-{ "values": ["everythingores:nickel_ore", "everythingores:deepslate_nickel_ore"] }
+{
+  "values": [
+    {
+      "id": "everythingores:nickel_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_nickel_ore",
+      "required": false
+    }
+  ]
+}

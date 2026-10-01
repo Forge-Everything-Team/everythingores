@@ -1,1 +1,8 @@
-{ "values": ["everythingores:raw_lead"] }
+{
+  "values": [
+    {
+      "id": "everythingores:raw_lead",
+      "required": false
+    }
+  ]
+}

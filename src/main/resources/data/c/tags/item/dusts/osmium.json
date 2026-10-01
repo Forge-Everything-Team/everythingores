@@ -1,5 +1,8 @@
 {
   "values": [
-    "everythingores:osmium_dust"
+    {
+      "id": "everythingores:osmium_dust",
+      "required": false
+    }
   ]
 }

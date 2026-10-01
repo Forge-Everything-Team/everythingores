@@ -1,5 +1,8 @@
 {
   "values": [
-    "everythingores:fluorite_dust"
+    {
+      "id": "everythingores:fluorite_dust",
+      "required": false
+    }
   ]
 }

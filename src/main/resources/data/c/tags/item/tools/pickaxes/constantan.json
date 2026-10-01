@@ -1,1 +1,8 @@
-{"values": ["everythingores:constantan_pickaxe"]}
+{
+  "values": [
+    {
+      "id": "everythingores:constantan_pickaxe",
+      "required": false
+    }
+  ]
+}

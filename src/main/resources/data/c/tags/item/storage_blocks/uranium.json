@@ -1,5 +1,8 @@
 {
   "values": [
-    "everythingores:uranium_block"
+    {
+      "id": "everythingores:uranium_block",
+      "required": false
+    }
   ]
 }

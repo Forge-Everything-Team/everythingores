@@ -1,0 +1,14 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "everythingores:material_enabled",
+      "material": "sulfur"
+    },
+    {
+      "type": "everythingores:sulfur_caves",
+      "enabled": true
+    }
+  ],
+  "type": "everythingores:sulfur_spike",
+  "config": {}
+}

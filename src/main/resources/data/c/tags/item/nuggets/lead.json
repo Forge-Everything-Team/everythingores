@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "everythingores:lead_nugget",
+      "required": false
+    },
+    {
+      "id": "createnuclear:lead_nugget",
+      "required": false
+    },
+    {
+      "id": "modern_industrialization:lead_nugget",
+      "required": false
+    },
+    {
+      "id": "tfmg:lead_nugget",
+      "required": false
+    }
+  ]
+}

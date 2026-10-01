@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "everythingores:material_enabled",
+      "material": "sulfur"
+    },
+    {
+      "type": "everythingores:sulfur_caves",
+      "enabled": true
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "everythingores:sulfur_block"
+    }
+  ],
+  "result": {
+    "id": "everythingores:sulfur_dust",
+    "count": 2
+  }
+}

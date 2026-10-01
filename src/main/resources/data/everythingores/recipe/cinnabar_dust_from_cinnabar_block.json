@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "everythingores:material_enabled",
+      "material": "cinnabar"
+    },
+    {
+      "type": "everythingores:sulfur_caves",
+      "enabled": true
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "everythingores:cinnabar_block"
+    }
+  ],
+  "result": {
+    "id": "everythingores:cinnabar_dust",
+    "count": 2
+  }
+}

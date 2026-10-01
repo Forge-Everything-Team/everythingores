@@ -1,0 +1,36 @@
+{
+  "values": [
+    {
+      "id": "everythingores:titanium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "electrodynamics:oretitanium",
+      "required": false
+    },
+    {
+      "id": "electrodynamics:deepslateoretitanium",
+      "required": false
+    },
+    {
+      "id": "modern_industrialization:titanium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_titanium_ore",
+      "required": false
+    }
+  ]
+}

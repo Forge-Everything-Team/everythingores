@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "everythingores:raw_titanium",
+      "required": false
+    },
+    {
+      "id": "electrodynamics:raworetitanium",
+      "required": false
+    },
+    {
+      "id": "modern_industrialization:raw_titanium",
+      "required": false
+    }
+  ]
+}

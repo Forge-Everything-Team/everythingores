@@ -1,5 +1,8 @@
 {
   "values": [
-    "everythingores:raw_nickel_block"
+    {
+      "id": "everythingores:raw_nickel_block",
+      "required": false
+    }
   ]
 }

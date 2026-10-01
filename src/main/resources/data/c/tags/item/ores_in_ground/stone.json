@@ -1,0 +1,104 @@
+{
+  "values": [
+    {
+      "id": "everythingores:tin_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:lead_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nickel_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:zinc_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:silver_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:uranium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:platinum_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:saltpeter_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:salt_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:monazite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nemonium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:osmium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:bismuth_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:chromite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:iridium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:lithium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:titanium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:chromium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:cassiterite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:cinnabar_ore",
+      "required": false
+    }
+  ]
+}

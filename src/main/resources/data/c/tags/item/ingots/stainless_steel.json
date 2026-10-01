@@ -1,5 +1,8 @@
 {
   "values": [
-    "everythingores:stainless_steel_ingot"
+    {
+      "id": "everythingores:stainless_steel_ingot",
+      "required": false
+    }
   ]
 }

@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "everythingores:material_enabled",
+      "material": "lead"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "c:nuggets/lead"
+    }
+  },
+  "result": {
+    "id": "everythingores:lead_ingot",
+    "count": 1
+  }
+}

@@ -1,1 +1,8 @@
-{"values": ["everythingores:constantan_axe"]}
+{
+  "values": [
+    {
+      "id": "everythingores:constantan_axe",
+      "required": false
+    }
+  ]
+}

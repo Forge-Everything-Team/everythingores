@@ -1,0 +1,12 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "everythingores:material_enabled",
+      "material": "chromium"
+    }
+  ],
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": "everythingores:chromium_ore",
+  "step": "underground_ores"
+}

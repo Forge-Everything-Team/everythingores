@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "everythingores:material_enabled",
+      "material": "platinum"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "c:nuggets/platinum"
+    }
+  },
+  "result": {
+    "id": "everythingores:platinum_ingot",
+    "count": 1
+  }
+}

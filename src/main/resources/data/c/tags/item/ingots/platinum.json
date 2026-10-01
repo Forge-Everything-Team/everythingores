@@ -1,1 +1,8 @@
-{ "values": ["everythingores:platinum_ingot"] }
+{
+  "values": [
+    {
+      "id": "everythingores:platinum_ingot",
+      "required": false
+    }
+  ]
+}

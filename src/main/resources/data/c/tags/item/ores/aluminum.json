@@ -1,1 +1,44 @@
-{ "values": ["everythingores:bauxite_ore", "everythingores:deepslate_bauxite_ore"] }
+{
+  "values": [
+    {
+      "id": "everythingores:bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_bauxite_ore",
+      "required": false
+    }
+  ]
+}

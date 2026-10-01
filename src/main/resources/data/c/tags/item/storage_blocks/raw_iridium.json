@@ -1,5 +1,8 @@
 {
   "values": [
-    "everythingores:raw_iridium_block"
+    {
+      "id": "everythingores:raw_iridium_block",
+      "required": false
+    }
   ]
 }

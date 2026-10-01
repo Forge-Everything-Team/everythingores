@@ -1,5 +1,8 @@
 {
   "values": [
-    "everythingores:lead_dust"
+    {
+      "id": "everythingores:lead_dust",
+      "required": false
+    }
   ]
 }

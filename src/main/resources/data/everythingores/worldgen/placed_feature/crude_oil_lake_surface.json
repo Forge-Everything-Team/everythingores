@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "everythingores:fluid_enabled",
+      "fluid": "crude_oil"
+    }
+  ],
+  "feature": "everythingores:crude_oil_lake",
+  "placement": [
+    {
+      "type": "everythingores:config_gate",
+      "fluid": "crude_oil"
+    },
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 90
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "WORLD_SURFACE_WG"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "everythingores:material_enabled",
+      "material": "aluminum"
+    }
+  ],
+  "feature": "everythingores:holystone_aluminum_ore",
+  "placement": [
+    {
+      "type": "everythingores:config_gate",
+      "material": "aluminum",
+      "dimension": "aether",
+      "family": "aluminum"
+    },
+    {
+      "type": "minecraft:count",
+      "count": 7
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "above_bottom": 0
+        },
+        "max_inclusive": {
+          "above_bottom": 128
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

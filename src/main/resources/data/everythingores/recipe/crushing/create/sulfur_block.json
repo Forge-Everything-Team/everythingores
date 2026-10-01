@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "everythingores:material_enabled",
+      "material": "sulfur"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "everythingores:sulfur_caves",
+      "enabled": true
+    }
+  ],
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "everythingores:sulfur_block"
+    }
+  ],
+  "processing_time": 150,
+  "results": [
+    {
+      "id": "everythingores:sulfur_dust",
+      "count": 4
+    }
+  ]
+}

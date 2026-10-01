@@ -1,1 +1,12 @@
-{ "values": ["everythingores:sulfur_ore", "everythingores:deepslate_sulfur_ore"] }
+{
+  "values": [
+    {
+      "id": "everythingores:sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_sulfur_ore",
+      "required": false
+    }
+  ]
+}

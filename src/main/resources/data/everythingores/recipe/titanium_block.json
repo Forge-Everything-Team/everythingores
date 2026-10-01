@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "everythingores:material_enabled",
+      "material": "titanium"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "c:ingots/titanium"
+    }
+  },
+  "result": {
+    "id": "everythingores:titanium_block",
+    "count": 1
+  }
+}

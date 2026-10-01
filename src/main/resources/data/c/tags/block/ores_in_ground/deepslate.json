@@ -1,0 +1,104 @@
+{
+  "values": [
+    {
+      "id": "everythingores:deepslate_tin_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_lead_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_silver_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_platinum_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_sulfur_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_saltpeter_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_salt_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_monazite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_nemonium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_bismuth_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_chromite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_iridium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_lithium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_chromium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_cassiterite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_cinnabar_ore",
+      "required": false
+    }
+  ]
+}

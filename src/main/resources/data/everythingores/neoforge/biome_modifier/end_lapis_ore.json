@@ -1,0 +1,12 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "everythingores:material_enabled",
+      "material": "lapis"
+    }
+  ],
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_end",
+  "features": "everythingores:end_lapis_ore",
+  "step": "underground_ores"
+}

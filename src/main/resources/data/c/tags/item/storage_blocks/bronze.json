@@ -1,5 +1,8 @@
 {
   "values": [
-    "everythingores:bronze_block"
+    {
+      "id": "everythingores:bronze_block",
+      "required": false
+    }
   ]
 }

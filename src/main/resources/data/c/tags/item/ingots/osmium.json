@@ -1,5 +1,8 @@
 {
   "values": [
-    "everythingores:osmium_ingot"
+    {
+      "id": "everythingores:osmium_ingot",
+      "required": false
+    }
   ]
 }

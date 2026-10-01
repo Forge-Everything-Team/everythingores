@@ -1,16 +1,38 @@
 {
+  "neoforge:conditions": [
+    {
+      "type": "everythingores:material_enabled",
+      "material": "silver"
+    }
+  ],
   "feature": "everythingores:silver_ore",
   "placement": [
-    { "type": "minecraft:count", "count": 50 },
-    { "type": "minecraft:in_square" },
+    {
+      "type": "everythingores:config_gate",
+      "material": "silver",
+      "dimension": "overworld"
+    },
+    {
+      "type": "minecraft:count",
+      "count": 6
+    },
+    {
+      "type": "minecraft:in_square"
+    },
     {
       "type": "minecraft:height_range",
       "height": {
         "type": "minecraft:uniform",
-        "min_inclusive": { "absolute": -64 },
-        "max_inclusive": { "absolute": 0 }
+        "min_inclusive": {
+          "absolute": -64
+        },
+        "max_inclusive": {
+          "absolute": 0
+        }
       }
     },
-    { "type": "minecraft:biome" }
+    {
+      "type": "minecraft:biome"
+    }
   ]
 }

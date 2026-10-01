@@ -1,1 +1,24 @@
-{ "values": ["everythingores:lead_ore", "everythingores:deepslate_lead_ore"] }
+{
+  "values": [
+    {
+      "id": "everythingores:lead_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_lead_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_lead_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_lead_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_lead_ore",
+      "required": false
+    }
+  ]
+}

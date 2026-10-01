@@ -1,0 +1,39 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "everythingores:material_enabled",
+      "material": "cinnabar"
+    },
+    {
+      "type": "everythingores:fluid_enabled",
+      "fluid": "mercury"
+    },
+    {
+      "type": "everythingores:sulfur_caves",
+      "enabled": true
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/cinnabar"
+    },
+    {
+      "tag": "c:dusts/cinnabar"
+    },
+    {
+      "tag": "c:dusts/cinnabar"
+    },
+    {
+      "tag": "c:dusts/cinnabar"
+    },
+    {
+      "item": "minecraft:bucket"
+    }
+  ],
+  "result": {
+    "id": "everythingores:mercury_bucket",
+    "count": 1
+  }
+}

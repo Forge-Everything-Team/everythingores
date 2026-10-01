@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "everythingores:tin_gear",
+      "required": false
+    },
+    {
+      "id": "electrodynamics:geartin",
+      "required": false
+    },
+    {
+      "id": "modern_industrialization:tin_gear",
+      "required": false
+    }
+  ]
+}

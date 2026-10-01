@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "everythingores:end_gold_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_gold_ore",
+      "required": false
+    }
+  ]
+}

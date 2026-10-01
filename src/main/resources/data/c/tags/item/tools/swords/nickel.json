@@ -1,1 +1,8 @@
-{"values": ["everythingores:nickel_sword"]}
+{
+  "values": [
+    {
+      "id": "everythingores:nickel_sword",
+      "required": false
+    }
+  ]
+}

@@ -1,1 +1,8 @@
-{"values": ["everythingores:tungsten_shovel"]}
+{
+  "values": [
+    {
+      "id": "everythingores:tungsten_shovel",
+      "required": false
+    }
+  ]
+}

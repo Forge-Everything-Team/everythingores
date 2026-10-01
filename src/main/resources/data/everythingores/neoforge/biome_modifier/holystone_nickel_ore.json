@@ -1,0 +1,12 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "everythingores:material_enabled",
+      "material": "nickel"
+    }
+  ],
+  "type": "neoforge:add_features",
+  "biomes": "#everythingores:is_aether",
+  "features": "everythingores:holystone_nickel_ore",
+  "step": "underground_ores"
+}

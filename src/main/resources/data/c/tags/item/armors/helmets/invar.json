@@ -1,1 +1,8 @@
-{"values": ["everythingores:invar_helmet"]}
+{
+  "values": [
+    {
+      "id": "everythingores:invar_helmet",
+      "required": false
+    }
+  ]
+}

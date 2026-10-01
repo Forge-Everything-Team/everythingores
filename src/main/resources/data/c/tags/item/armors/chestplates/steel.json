@@ -1,1 +1,8 @@
-{"values": ["everythingores:steel_chestplate"]}
+{
+  "values": [
+    {
+      "id": "everythingores:steel_chestplate",
+      "required": false
+    }
+  ]
+}

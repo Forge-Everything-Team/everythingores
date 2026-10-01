@@ -1,5 +1,8 @@
 {
   "values": [
-    "everythingores:raw_aluminum_block"
+    {
+      "id": "everythingores:raw_aluminum_block",
+      "required": false
+    }
   ]
 }

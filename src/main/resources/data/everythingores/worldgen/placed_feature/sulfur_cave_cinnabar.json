@@ -1,0 +1,43 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "everythingores:material_enabled",
+      "material": "cinnabar"
+    },
+    {
+      "type": "everythingores:sulfur_caves",
+      "enabled": true
+    }
+  ],
+  "feature": "everythingores:sulfur_cave_cinnabar",
+  "placement": [
+    {
+      "type": "everythingores:config_gate",
+      "material": "cinnabar",
+      "dimension": "overworld",
+      "sulfur_caves": true
+    },
+    {
+      "type": "minecraft:count",
+      "count": 16
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "above_bottom": 0
+        },
+        "max_inclusive": {
+          "absolute": 64
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

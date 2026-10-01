@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "everythingores:material_enabled",
+      "material": "cinnabar"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "everythingores:sulfur_caves",
+      "enabled": true
+    }
+  ],
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "everythingores:cinnabar_block"
+    }
+  ],
+  "processing_time": 150,
+  "results": [
+    {
+      "id": "everythingores:cinnabar_dust",
+      "count": 4
+    }
+  ]
+}

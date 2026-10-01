@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "everythingores:material_enabled",
+      "material": "cinnabar"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    },
+    {
+      "type": "everythingores:sulfur_caves",
+      "enabled": true
+    }
+  ],
+  "type": "immersiveengineering:crusher",
+  "energy": 3200,
+  "input": {
+    "item": "everythingores:cinnabar_block"
+  },
+  "result": {
+    "count": 4,
+    "id": "everythingores:cinnabar_dust"
+  }
+}

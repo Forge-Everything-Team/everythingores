@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "everythingores:material_enabled",
+      "material": "tin"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:ingots/tin"
+    }
+  ],
+  "result": {
+    "id": "everythingores:tin_nugget",
+    "count": 9
+  }
+}

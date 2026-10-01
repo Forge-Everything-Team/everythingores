@@ -1,5 +1,12 @@
 {
   "values": [
-    "everythingores:fluorite_crystal"
+    {
+      "id": "everythingores:fluorite_crystal",
+      "required": false
+    },
+    {
+      "id": "mekanism:fluorite_gem",
+      "required": false
+    }
   ]
 }

@@ -1,1 +1,8 @@
-{"values": ["everythingores:invar_axe"]}
+{
+  "values": [
+    {
+      "id": "everythingores:invar_axe",
+      "required": false
+    }
+  ]
+}

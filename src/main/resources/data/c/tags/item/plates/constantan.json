@@ -1,1 +1,8 @@
-{"values": ["everythingores:constantan_plate"]}
+{
+  "values": [
+    {
+      "id": "everythingores:constantan_plate",
+      "required": false
+    }
+  ]
+}

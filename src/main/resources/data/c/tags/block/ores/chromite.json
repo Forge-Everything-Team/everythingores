@@ -1,6 +1,44 @@
 {
   "values": [
-    "everythingores:chromite_ore",
-    "everythingores:deepslate_chromite_ore"
+    {
+      "id": "everythingores:chromite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_chromite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_chromite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_chromite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_chromite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:chromium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_chromium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_chromium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_chromium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_chromium_ore",
+      "required": false
+    }
   ]
 }

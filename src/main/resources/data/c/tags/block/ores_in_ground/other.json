@@ -1,0 +1,188 @@
+{
+  "values": [
+    {
+      "id": "everythingores:end_tin_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_lead_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_silver_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_platinum_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_bismuth_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_chromite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_iridium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_lithium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_tin_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_lead_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_silver_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_platinum_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_bismuth_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_chromite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_iridium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_lithium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_coal_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_iron_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_iron_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_copper_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_copper_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_gold_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_sapphire_ore",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.forgeeverything.everythingores.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "immersiveengineering.CokeOvenLogicMixin",
+    "immersiveengineering.CokeOvenRecipeCategoryMixin",
+    "industrialforegoing.BioReactorTileMixin",
+    "industrialforegoing.BiofuelGeneratorTileMixin",
+    "industrialforegoing.ItemInfinityMixin",
+    "industrialforegoing.RecipeViewerHelperMixin",
+    "stellaris.StellarisFluidValidatorMixin",
+    "stellaris.StellarisFuelTypeMixin",
+    "stellaris.StellarisMachineTickMixin",
+    "stellaris.StellarisMenuMixin",
+    "stellaris.StellarisVehicleFuelMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,1 +1,8 @@
-{"values": ["everythingores:stainless_steel_shovel"]}
+{
+  "values": [
+    {
+      "id": "everythingores:stainless_steel_shovel",
+      "required": false
+    }
+  ]
+}

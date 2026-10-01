@@ -1,1 +1,24 @@
-{ "values": ["everythingores:platinum_ore", "everythingores:deepslate_platinum_ore"] }
+{
+  "values": [
+    {
+      "id": "everythingores:platinum_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_platinum_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_platinum_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_platinum_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_platinum_ore",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "neoforge:conditions": [
+    { "type": "neoforge:mod_loaded", "modid": "betternether" }
+  ],
+  "type": "neoforge:remove_features",
+  "biomes": "#minecraft:is_nether",
+  "features": [
+    "betternether:nether_lapis_ore",
+    "betternether:nether_redstone_ore",
+    "betternether:nether_ruby_ore",
+    "betternether:nether_ruby_large_ore",
+    "betternether:nether_ruby_rare_ore",
+    "betternether:nether_ruby_soul_ore"
+  ]
+}

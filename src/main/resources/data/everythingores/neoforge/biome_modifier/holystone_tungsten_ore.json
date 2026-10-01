@@ -1,0 +1,12 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "everythingores:material_enabled",
+      "material": "tungsten"
+    }
+  ],
+  "type": "neoforge:add_features",
+  "biomes": "#everythingores:is_aether",
+  "features": "everythingores:holystone_tungsten_ore",
+  "step": "underground_ores"
+}

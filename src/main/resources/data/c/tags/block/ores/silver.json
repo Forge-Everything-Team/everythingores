@@ -1,1 +1,24 @@
-{ "values": ["everythingores:silver_ore", "everythingores:deepslate_silver_ore"] }
+{
+  "values": [
+    {
+      "id": "everythingores:silver_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_silver_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_silver_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_silver_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_silver_ore",
+      "required": false
+    }
+  ]
+}

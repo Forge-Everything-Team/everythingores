@@ -1,5 +1,8 @@
 {
   "values": [
-    "everythingores:invar_ingot"
+    {
+      "id": "everythingores:invar_ingot",
+      "required": false
+    }
   ]
 }

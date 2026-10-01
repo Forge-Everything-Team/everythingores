@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "everythingores:platinum_nugget",
+      "required": false
+    },
+    {
+      "id": "modern_industrialization:platinum_nugget",
+      "required": false
+    },
+    {
+      "id": "oritech:platinum_nugget",
+      "required": false
+    }
+  ]
+}

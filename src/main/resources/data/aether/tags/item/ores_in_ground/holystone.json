@@ -1,0 +1,100 @@
+{
+  "values": [
+    {
+      "id": "everythingores:holystone_tin_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_lead_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_silver_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_platinum_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_bismuth_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_chromite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_iridium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_lithium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_iron_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_copper_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_gold_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_sapphire_ore",
+      "required": false
+    }
+  ]
+}

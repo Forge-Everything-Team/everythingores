@@ -1,1 +1,8 @@
-{"values": ["everythingores:platinum_pickaxe"]}
+{
+  "values": [
+    {
+      "id": "everythingores:platinum_pickaxe",
+      "required": false
+    }
+  ]
+}

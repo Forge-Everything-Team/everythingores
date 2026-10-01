@@ -1,4 +1,10 @@
 {
+  "neoforge:conditions": [
+    {
+      "type": "everythingores:material_enabled",
+      "material": "bronze"
+    }
+  ],
   "type": "minecraft:block",
   "pools": [
     {

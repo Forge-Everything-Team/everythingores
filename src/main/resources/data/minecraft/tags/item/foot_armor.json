@@ -1,0 +1,32 @@
+{
+  "values": [
+    {
+      "id": "everythingores:bronze_boots",
+      "required": false
+    },
+    {
+      "id": "everythingores:silver_boots",
+      "required": false
+    },
+    {
+      "id": "everythingores:invar_boots",
+      "required": false
+    },
+    {
+      "id": "everythingores:steel_boots",
+      "required": false
+    },
+    {
+      "id": "everythingores:osmium_boots",
+      "required": false
+    },
+    {
+      "id": "everythingores:platinum_boots",
+      "required": false
+    },
+    {
+      "id": "everythingores:iridium_boots",
+      "required": false
+    }
+  ]
+}

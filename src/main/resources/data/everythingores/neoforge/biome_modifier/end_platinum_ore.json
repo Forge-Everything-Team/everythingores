@@ -1,0 +1,12 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "everythingores:material_enabled",
+      "material": "platinum"
+    }
+  ],
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_end",
+  "features": "everythingores:end_platinum_ore",
+  "step": "underground_ores"
+}

@@ -1,1 +1,8 @@
-{"values": ["everythingores:red_alloy_block"]}
+{
+  "values": [
+    {
+      "id": "everythingores:red_alloy_block",
+      "required": false
+    }
+  ]
+}

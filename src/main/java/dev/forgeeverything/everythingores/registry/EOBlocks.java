@@ -1,9 +1,15 @@
 package dev.forgeeverything.everythingores.registry;
 
 import dev.forgeeverything.everythingores.EverythingOres;
+import dev.forgeeverything.everythingores.block.PotentSulfurBlock;
+import dev.forgeeverything.everythingores.block.SulfurSpikeBlock;
+import dev.forgeeverything.everythingores.config.EOConfig;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DropExperienceBlock;
+import net.minecraft.world.level.block.RedStoneOreBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
@@ -35,6 +41,7 @@ public class EOBlocks {
 
     private static DeferredBlock<DropExperienceBlock> stoneOre(String name, UniformInt xp,
                                                                 float hardness, MapColor color) {
+        if (!EOConfig.isRegistrationEnabled(name)) return null;
         return BLOCKS.registerBlock(name,
                 props -> new DropExperienceBlock(xp, props),
                 BlockBehaviour.Properties.of()
@@ -44,6 +51,7 @@ public class EOBlocks {
 
     private static DeferredBlock<DropExperienceBlock> deepslateOre(String name, UniformInt xp,
                                                                      float hardness, MapColor color) {
+        if (!EOConfig.isRegistrationEnabled(name)) return null;
         return BLOCKS.registerBlock(name,
                 props -> new DropExperienceBlock(xp, props),
                 BlockBehaviour.Properties.of()
@@ -51,8 +59,59 @@ public class EOBlocks {
                         .strength(hardness, 3.0F).sound(SoundType.DEEPSLATE));
     }
 
+    /** Netherrack-hosted ore variant — same yield as the stone form, nether ore sound. */
+    private static DeferredBlock<DropExperienceBlock> netherOre(String name, UniformInt xp,
+                                                                 float hardness, MapColor color) {
+        if (!EOConfig.isRegistrationEnabled(name)) return null;
+        return BLOCKS.registerBlock(name,
+                props -> new DropExperienceBlock(xp, props),
+                BlockBehaviour.Properties.of()
+                        .mapColor(color).requiresCorrectToolForDrops()
+                        .strength(hardness, 3.0F).sound(SoundType.NETHER_ORE));
+    }
+
+    /** End-stone-hosted ore variant — deepslate-grade hardness, stone sound. */
+    private static DeferredBlock<DropExperienceBlock> endOre(String name, UniformInt xp,
+                                                              float hardness, MapColor color) {
+        if (!EOConfig.isRegistrationEnabled(name)) return null;
+        return BLOCKS.registerBlock(name,
+                props -> new DropExperienceBlock(xp, props),
+                BlockBehaviour.Properties.of()
+                        .mapColor(color).requiresCorrectToolForDrops()
+                        .strength(hardness, 3.0F).sound(SoundType.STONE));
+    }
+
+    /** Holystone-hosted ore variant — Aether host rock, stone sound. */
+    private static DeferredBlock<DropExperienceBlock> holystoneOre(String name, UniformInt xp,
+                                                                 float hardness, MapColor color) {
+        if (!EOConfig.isRegistrationEnabled(name)) return null;
+        return BLOCKS.registerBlock(name,
+                props -> new DropExperienceBlock(xp, props),
+                BlockBehaviour.Properties.of()
+                        .mapColor(color).requiresCorrectToolForDrops()
+                        .strength(hardness, 3.0F).sound(SoundType.STONE));
+    }
+
+    /**
+     * Redstone ore variant — needs vanilla's RedStoneOreBlock rather than
+     * DropExperienceBlock so it still lights up when walked on or punched and
+     * still drops its own 1-5 XP. Light level and XP are handled by the class.
+     */
+    private static DeferredBlock<RedStoneOreBlock> redstoneOre(String name, SoundType sound,
+                                                                float hardness, MapColor color) {
+        if (!EOConfig.isRegistrationEnabled(name)) return null;
+        return BLOCKS.registerBlock(name,
+                RedStoneOreBlock::new,
+                BlockBehaviour.Properties.of()
+                        .mapColor(color).requiresCorrectToolForDrops()
+                        .randomTicks()
+                        .lightLevel(state -> state.getValue(RedStoneOreBlock.LIT) ? 9 : 0)
+                        .strength(hardness, 3.0F).sound(sound));
+    }
+
     /** 9-ingot storage block — drops itself, metal sound. */
     private static DeferredBlock<Block> metalBlock(String name, float hardness, MapColor color) {
+        if (!EOConfig.isRegistrationEnabled(name)) return null;
         return BLOCKS.registerSimpleBlock(name,
                 BlockBehaviour.Properties.of()
                         .mapColor(color).requiresCorrectToolForDrops()
@@ -61,6 +120,7 @@ public class EOBlocks {
 
     /** 9-raw-ore storage block — drops itself, stone sound. */
     private static DeferredBlock<Block> rawBlock(String name, float hardness, MapColor color) {
+        if (!EOConfig.isRegistrationEnabled(name)) return null;
         return BLOCKS.registerSimpleBlock(name,
                 BlockBehaviour.Properties.of()
                         .mapColor(color).requiresCorrectToolForDrops()
@@ -75,6 +135,12 @@ public class EOBlocks {
             stoneOre("tin_ore", UniformInt.of(0, 2), 3.0F, MapColor.STONE);
     public static final DeferredBlock<DropExperienceBlock> DEEPSLATE_TIN_ORE =
             deepslateOre("deepslate_tin_ore", UniformInt.of(0, 2), 4.5F, MapColor.DEEPSLATE);
+    // Cassiterite is the real tin mineral, and what Electrodynamics calls its
+    // tin ore. Second family for tin, picked with the config ore_source switch.
+    public static final DeferredBlock<DropExperienceBlock> CASSITERITE_ORE =
+            stoneOre("cassiterite_ore", UniformInt.of(0, 2), 3.0F, MapColor.STONE);
+    public static final DeferredBlock<DropExperienceBlock> DEEPSLATE_CASSITERITE_ORE =
+            deepslateOre("deepslate_cassiterite_ore", UniformInt.of(0, 2), 4.5F, MapColor.DEEPSLATE);
 
     public static final DeferredBlock<DropExperienceBlock> LEAD_ORE =
             stoneOre("lead_ore", UniformInt.of(0, 2), 3.0F, MapColor.STONE);
@@ -90,6 +156,12 @@ public class EOBlocks {
             stoneOre("bauxite_ore", UniformInt.of(0, 2), 3.0F, MapColor.COLOR_ORANGE);
     public static final DeferredBlock<DropExperienceBlock> DEEPSLATE_BAUXITE_ORE =
             deepslateOre("deepslate_bauxite_ore", UniformInt.of(0, 2), 4.5F, MapColor.DEEPSLATE);
+    // Aluminum has two ore families so packs can pick one via the config
+    // ore_source switch: bauxite, or aluminum proper, in every dimension.
+    public static final DeferredBlock<DropExperienceBlock> ALUMINUM_ORE =
+            stoneOre("aluminum_ore", UniformInt.of(0, 2), 3.0F, MapColor.COLOR_ORANGE);
+    public static final DeferredBlock<DropExperienceBlock> DEEPSLATE_ALUMINUM_ORE =
+            deepslateOre("deepslate_aluminum_ore", UniformInt.of(0, 2), 4.5F, MapColor.DEEPSLATE);
 
     public static final DeferredBlock<DropExperienceBlock> ZINC_ORE =
             stoneOre("zinc_ore", UniformInt.of(0, 2), 3.0F, MapColor.STONE);
@@ -115,6 +187,35 @@ public class EOBlocks {
             stoneOre("sulfur_ore", UniformInt.of(2, 5), 2.0F, MapColor.COLOR_YELLOW);
     public static final DeferredBlock<DropExperienceBlock> DEEPSLATE_SULFUR_ORE =
             deepslateOre("deepslate_sulfur_ore", UniformInt.of(2, 5), 3.5F, MapColor.DEEPSLATE);
+
+    // Sulfur caves (26.2 style, config: sulfur.sulfur_caves). These three
+    // register with sulfur in either style and double as building blocks;
+    // switching the caves on removes the two sulfur ores above instead.
+    // The sulfur block drops sulfur dust when mined, or itself with Silk Touch.
+    public static final DeferredBlock<Block> SULFUR_BLOCK = EOConfig.isRegistrationEnabled("sulfur_block")
+            ? BLOCKS.registerSimpleBlock("sulfur_block",
+                    BlockBehaviour.Properties.of()
+                            .mapColor(MapColor.COLOR_YELLOW).instrument(NoteBlockInstrument.BASEDRUM)
+                            .requiresCorrectToolForDrops()
+                            .strength(1.5F, 3.0F).sound(SoundType.DRIPSTONE_BLOCK))
+            : null;
+    public static final DeferredBlock<PotentSulfurBlock> POTENT_SULFUR = EOConfig.isRegistrationEnabled("potent_sulfur")
+            ? BLOCKS.registerBlock("potent_sulfur", PotentSulfurBlock::new,
+                    BlockBehaviour.Properties.of()
+                            .mapColor(MapColor.COLOR_LIGHT_GREEN).instrument(NoteBlockInstrument.BASEDRUM)
+                            .requiresCorrectToolForDrops().randomTicks()
+                            .strength(1.5F, 3.0F).sound(SoundType.DRIPSTONE_BLOCK))
+            : null;
+    public static final DeferredBlock<SulfurSpikeBlock> SULFUR_SPIKE = EOConfig.isRegistrationEnabled("sulfur_spike")
+            ? BLOCKS.registerBlock("sulfur_spike", SulfurSpikeBlock::new,
+                    BlockBehaviour.Properties.of()
+                            .mapColor(MapColor.COLOR_YELLOW).forceSolidOn().instrument(NoteBlockInstrument.BASEDRUM)
+                            .noOcclusion().sound(SoundType.POINTED_DRIPSTONE)
+                            .strength(1.5F, 3.0F).dynamicShape()
+                            .offsetType(BlockBehaviour.OffsetType.XZ)
+                            .pushReaction(PushReaction.DESTROY)
+                            .isRedstoneConductor((state, level, pos) -> false))
+            : null;
 
     public static final DeferredBlock<DropExperienceBlock> SALTPETER_ORE =
             stoneOre("saltpeter_ore", UniformInt.of(1, 3), 2.0F, MapColor.SNOW);
@@ -154,6 +255,28 @@ public class EOBlocks {
             stoneOre("chromite_ore", UniformInt.of(1, 3), 3.0F, MapColor.METAL);
     public static final DeferredBlock<DropExperienceBlock> DEEPSLATE_CHROMITE_ORE =
             deepslateOre("deepslate_chromite_ore", UniformInt.of(1, 3), 4.5F, MapColor.DEEPSLATE);
+    // Cinnabar is mercury sulfide - a standalone mineral like fluorite and
+    // monazite, roasted into mercury rather than smelted into an ingot.
+    public static final DeferredBlock<DropExperienceBlock> CINNABAR_ORE =
+            stoneOre("cinnabar_ore", UniformInt.of(2, 5), 3.0F, MapColor.COLOR_RED);
+    public static final DeferredBlock<DropExperienceBlock> DEEPSLATE_CINNABAR_ORE =
+            deepslateOre("deepslate_cinnabar_ore", UniformInt.of(2, 5), 4.5F, MapColor.DEEPSLATE);
+    // Block of cinnabar - the red rock of the 26.2 sulfur caves. Registered with
+    // cinnabar in either style; with sulfur caves on it replaces the cinnabar
+    // ores (Overworld and Nether). Drops cinnabar dust when mined, or itself with Silk Touch.
+    public static final DeferredBlock<Block> CINNABAR_BLOCK = EOConfig.isRegistrationEnabled("cinnabar_block")
+            ? BLOCKS.registerSimpleBlock("cinnabar_block",
+                    BlockBehaviour.Properties.of()
+                            .mapColor(MapColor.COLOR_RED).instrument(NoteBlockInstrument.BASEDRUM)
+                            .requiresCorrectToolForDrops()
+                            .strength(1.5F, 6.0F).sound(SoundType.TUFF))
+            : null;
+    // Chromium, like aluminum, has two ore families so packs can pick the
+    // realistic mineral or the invented block via the config ore_source switch.
+    public static final DeferredBlock<DropExperienceBlock> CHROMIUM_ORE =
+            stoneOre("chromium_ore", UniformInt.of(1, 3), 3.0F, MapColor.METAL);
+    public static final DeferredBlock<DropExperienceBlock> DEEPSLATE_CHROMIUM_ORE =
+            deepslateOre("deepslate_chromium_ore", UniformInt.of(1, 3), 4.5F, MapColor.DEEPSLATE);
 
     public static final DeferredBlock<DropExperienceBlock> TUNGSTEN_ORE =
             stoneOre("tungsten_ore", UniformInt.of(1, 4), 4.5F, MapColor.COLOR_GRAY);
@@ -165,6 +288,238 @@ public class EOBlocks {
     public static final DeferredBlock<DropExperienceBlock> DEEPSLATE_IRIDIUM_ORE =
             deepslateOre("deepslate_iridium_ore", UniformInt.of(3, 7), 4.5F, MapColor.DEEPSLATE);
 
+    // Lithium — three-mod duplicate: TFMG (full chain), Electrodynamics
+    // (processing chain), Mekanism (dust only).
+    public static final DeferredBlock<DropExperienceBlock> LITHIUM_ORE =
+            stoneOre("lithium_ore", UniformInt.of(0, 2), 3.0F, MapColor.COLOR_LIGHT_GRAY);
+    public static final DeferredBlock<DropExperienceBlock> DEEPSLATE_LITHIUM_ORE =
+            deepslateOre("deepslate_lithium_ore", UniformInt.of(0, 2), 4.5F, MapColor.DEEPSLATE);
+
+    // Titanium — two-mod duplicate: Electrodynamics + Modern Industrialization.
+    public static final DeferredBlock<DropExperienceBlock> TITANIUM_ORE =
+            stoneOre("titanium_ore", UniformInt.of(0, 2), 3.0F, MapColor.METAL);
+    public static final DeferredBlock<DropExperienceBlock> DEEPSLATE_TITANIUM_ORE =
+            deepslateOre("deepslate_titanium_ore", UniformInt.of(0, 2), 4.5F, MapColor.DEEPSLATE);
+
+    // ================================================================
+    // ORE BLOCKS — Nether variants
+    //
+    // Netherrack-hosted duplicates of the metallic ores. Same raw drop and
+    // XP as the stone form; the Nether is an alternate source, not a richer
+    // one. Non-metallic ores (sulfur, salt, saltpeter, monazite, fluorite)
+    // have no Nether form.
+    // ================================================================
+
+    public static final DeferredBlock<DropExperienceBlock> NETHER_TIN_ORE =
+            netherOre("nether_tin_ore", UniformInt.of(0, 2), 3.0F, MapColor.NETHER);
+    public static final DeferredBlock<DropExperienceBlock> NETHER_CASSITERITE_ORE =
+            netherOre("nether_cassiterite_ore", UniformInt.of(0, 2), 3.0F, MapColor.NETHER);
+    public static final DeferredBlock<DropExperienceBlock> NETHER_LEAD_ORE =
+            netherOre("nether_lead_ore", UniformInt.of(0, 2), 3.0F, MapColor.NETHER);
+    public static final DeferredBlock<DropExperienceBlock> NETHER_NICKEL_ORE =
+            netherOre("nether_nickel_ore", UniformInt.of(0, 2), 3.0F, MapColor.NETHER);
+    public static final DeferredBlock<DropExperienceBlock> NETHER_ALUMINUM_ORE =
+            netherOre("nether_aluminum_ore", UniformInt.of(0, 2), 3.0F, MapColor.NETHER);
+    public static final DeferredBlock<DropExperienceBlock> NETHER_BAUXITE_ORE =
+            netherOre("nether_bauxite_ore", UniformInt.of(0, 2), 3.0F, MapColor.NETHER);
+    public static final DeferredBlock<DropExperienceBlock> NETHER_ZINC_ORE =
+            netherOre("nether_zinc_ore", UniformInt.of(0, 2), 3.0F, MapColor.NETHER);
+    public static final DeferredBlock<DropExperienceBlock> NETHER_SILVER_ORE =
+            netherOre("nether_silver_ore", UniformInt.of(0, 3), 3.0F, MapColor.NETHER);
+    public static final DeferredBlock<DropExperienceBlock> NETHER_URANIUM_ORE =
+            netherOre("nether_uranium_ore", UniformInt.of(1, 4), 3.0F, MapColor.NETHER);
+    public static final DeferredBlock<DropExperienceBlock> NETHER_PLATINUM_ORE =
+            netherOre("nether_platinum_ore", UniformInt.of(2, 5), 3.0F, MapColor.NETHER);
+    public static final DeferredBlock<DropExperienceBlock> NETHER_OSMIUM_ORE =
+            netherOre("nether_osmium_ore", UniformInt.of(0, 2), 3.0F, MapColor.NETHER);
+    public static final DeferredBlock<DropExperienceBlock> NETHER_BISMUTH_ORE =
+            netherOre("nether_bismuth_ore", UniformInt.of(0, 2), 3.0F, MapColor.NETHER);
+    public static final DeferredBlock<DropExperienceBlock> NETHER_CHROMITE_ORE =
+            netherOre("nether_chromite_ore", UniformInt.of(1, 3), 3.0F, MapColor.NETHER);
+    public static final DeferredBlock<DropExperienceBlock> NETHER_CHROMIUM_ORE =
+            netherOre("nether_chromium_ore", UniformInt.of(1, 3), 3.0F, MapColor.NETHER);
+    public static final DeferredBlock<DropExperienceBlock> NETHER_CINNABAR_ORE =
+            netherOre("nether_cinnabar_ore", UniformInt.of(2, 5), 3.0F, MapColor.NETHER);
+    public static final DeferredBlock<DropExperienceBlock> NETHER_TUNGSTEN_ORE =
+            netherOre("nether_tungsten_ore", UniformInt.of(1, 4), 4.5F, MapColor.NETHER);
+    public static final DeferredBlock<DropExperienceBlock> NETHER_IRIDIUM_ORE =
+            netherOre("nether_iridium_ore", UniformInt.of(3, 7), 3.0F, MapColor.NETHER);
+    public static final DeferredBlock<DropExperienceBlock> NETHER_LITHIUM_ORE =
+            netherOre("nether_lithium_ore", UniformInt.of(0, 2), 3.0F, MapColor.NETHER);
+    public static final DeferredBlock<DropExperienceBlock> NETHER_TITANIUM_ORE =
+            netherOre("nether_titanium_ore", UniformInt.of(0, 2), 3.0F, MapColor.NETHER);
+
+    // ================================================================
+    // ORE BLOCKS — End variants
+    //
+    // End-stone-hosted duplicates of the same fifteen metals. Deepslate-grade
+    // hardness — End stone is the late-game host rock.
+    // ================================================================
+
+    public static final DeferredBlock<DropExperienceBlock> END_TIN_ORE =
+            endOre("end_tin_ore", UniformInt.of(0, 2), 4.5F, MapColor.SAND);
+    public static final DeferredBlock<DropExperienceBlock> END_CASSITERITE_ORE =
+            endOre("end_cassiterite_ore", UniformInt.of(0, 2), 4.5F, MapColor.SAND);
+    public static final DeferredBlock<DropExperienceBlock> END_LEAD_ORE =
+            endOre("end_lead_ore", UniformInt.of(0, 2), 4.5F, MapColor.SAND);
+    public static final DeferredBlock<DropExperienceBlock> END_NICKEL_ORE =
+            endOre("end_nickel_ore", UniformInt.of(0, 2), 4.5F, MapColor.SAND);
+    public static final DeferredBlock<DropExperienceBlock> END_ALUMINUM_ORE =
+            endOre("end_aluminum_ore", UniformInt.of(0, 2), 4.5F, MapColor.SAND);
+    public static final DeferredBlock<DropExperienceBlock> END_BAUXITE_ORE =
+            endOre("end_bauxite_ore", UniformInt.of(0, 2), 4.5F, MapColor.SAND);
+    public static final DeferredBlock<DropExperienceBlock> END_ZINC_ORE =
+            endOre("end_zinc_ore", UniformInt.of(0, 2), 4.5F, MapColor.SAND);
+    public static final DeferredBlock<DropExperienceBlock> END_SILVER_ORE =
+            endOre("end_silver_ore", UniformInt.of(0, 3), 4.5F, MapColor.SAND);
+    public static final DeferredBlock<DropExperienceBlock> END_URANIUM_ORE =
+            endOre("end_uranium_ore", UniformInt.of(1, 4), 4.5F, MapColor.SAND);
+    public static final DeferredBlock<DropExperienceBlock> END_PLATINUM_ORE =
+            endOre("end_platinum_ore", UniformInt.of(2, 5), 4.5F, MapColor.SAND);
+    public static final DeferredBlock<DropExperienceBlock> END_OSMIUM_ORE =
+            endOre("end_osmium_ore", UniformInt.of(0, 2), 4.5F, MapColor.SAND);
+    public static final DeferredBlock<DropExperienceBlock> END_BISMUTH_ORE =
+            endOre("end_bismuth_ore", UniformInt.of(0, 2), 4.5F, MapColor.SAND);
+    public static final DeferredBlock<DropExperienceBlock> END_CHROMITE_ORE =
+            endOre("end_chromite_ore", UniformInt.of(1, 3), 4.5F, MapColor.SAND);
+    public static final DeferredBlock<DropExperienceBlock> END_CHROMIUM_ORE =
+            endOre("end_chromium_ore", UniformInt.of(1, 3), 4.5F, MapColor.SAND);
+    public static final DeferredBlock<DropExperienceBlock> END_TUNGSTEN_ORE =
+            endOre("end_tungsten_ore", UniformInt.of(1, 4), 6.0F, MapColor.SAND);
+    public static final DeferredBlock<DropExperienceBlock> END_IRIDIUM_ORE =
+            endOre("end_iridium_ore", UniformInt.of(3, 7), 4.5F, MapColor.SAND);
+    public static final DeferredBlock<DropExperienceBlock> END_LITHIUM_ORE =
+            endOre("end_lithium_ore", UniformInt.of(0, 2), 4.5F, MapColor.SAND);
+    public static final DeferredBlock<DropExperienceBlock> END_TITANIUM_ORE =
+            endOre("end_titanium_ore", UniformInt.of(0, 2), 4.5F, MapColor.SAND);
+
+    // ================================================================
+    // ORE BLOCKS — Holystone variants
+    //
+    // Holystone-hosted duplicates of the same fifteen metals. The Aether is
+    // an optional dimension: these blocks always register, but they only
+    // generate when the Aether mod supplies the host rock and biomes behind
+    // everythingores:holystone_ore_replaceables / everythingores:is_aether.
+    // ================================================================
+
+    public static final DeferredBlock<DropExperienceBlock> HOLYSTONE_TIN_ORE =
+            holystoneOre("holystone_tin_ore", UniformInt.of(0, 2), 3.0F, MapColor.QUARTZ);
+    public static final DeferredBlock<DropExperienceBlock> HOLYSTONE_CASSITERITE_ORE =
+            holystoneOre("holystone_cassiterite_ore", UniformInt.of(0, 2), 3.0F, MapColor.QUARTZ);
+    public static final DeferredBlock<DropExperienceBlock> HOLYSTONE_LEAD_ORE =
+            holystoneOre("holystone_lead_ore", UniformInt.of(0, 2), 3.0F, MapColor.QUARTZ);
+    public static final DeferredBlock<DropExperienceBlock> HOLYSTONE_NICKEL_ORE =
+            holystoneOre("holystone_nickel_ore", UniformInt.of(0, 2), 3.0F, MapColor.QUARTZ);
+    public static final DeferredBlock<DropExperienceBlock> HOLYSTONE_ALUMINUM_ORE =
+            holystoneOre("holystone_aluminum_ore", UniformInt.of(0, 2), 3.0F, MapColor.QUARTZ);
+    public static final DeferredBlock<DropExperienceBlock> HOLYSTONE_BAUXITE_ORE =
+            holystoneOre("holystone_bauxite_ore", UniformInt.of(0, 2), 3.0F, MapColor.QUARTZ);
+    public static final DeferredBlock<DropExperienceBlock> HOLYSTONE_ZINC_ORE =
+            holystoneOre("holystone_zinc_ore", UniformInt.of(0, 2), 3.0F, MapColor.QUARTZ);
+    public static final DeferredBlock<DropExperienceBlock> HOLYSTONE_SILVER_ORE =
+            holystoneOre("holystone_silver_ore", UniformInt.of(0, 3), 3.0F, MapColor.QUARTZ);
+    public static final DeferredBlock<DropExperienceBlock> HOLYSTONE_URANIUM_ORE =
+            holystoneOre("holystone_uranium_ore", UniformInt.of(1, 4), 3.0F, MapColor.QUARTZ);
+    public static final DeferredBlock<DropExperienceBlock> HOLYSTONE_PLATINUM_ORE =
+            holystoneOre("holystone_platinum_ore", UniformInt.of(2, 5), 3.0F, MapColor.QUARTZ);
+    public static final DeferredBlock<DropExperienceBlock> HOLYSTONE_OSMIUM_ORE =
+            holystoneOre("holystone_osmium_ore", UniformInt.of(0, 2), 3.0F, MapColor.QUARTZ);
+    public static final DeferredBlock<DropExperienceBlock> HOLYSTONE_BISMUTH_ORE =
+            holystoneOre("holystone_bismuth_ore", UniformInt.of(0, 2), 3.0F, MapColor.QUARTZ);
+    public static final DeferredBlock<DropExperienceBlock> HOLYSTONE_CHROMITE_ORE =
+            holystoneOre("holystone_chromite_ore", UniformInt.of(1, 3), 3.0F, MapColor.QUARTZ);
+    public static final DeferredBlock<DropExperienceBlock> HOLYSTONE_CHROMIUM_ORE =
+            holystoneOre("holystone_chromium_ore", UniformInt.of(1, 3), 3.0F, MapColor.QUARTZ);
+    public static final DeferredBlock<DropExperienceBlock> HOLYSTONE_TUNGSTEN_ORE =
+            holystoneOre("holystone_tungsten_ore", UniformInt.of(1, 4), 4.5F, MapColor.QUARTZ);
+    public static final DeferredBlock<DropExperienceBlock> HOLYSTONE_IRIDIUM_ORE =
+            holystoneOre("holystone_iridium_ore", UniformInt.of(3, 7), 3.0F, MapColor.QUARTZ);
+    public static final DeferredBlock<DropExperienceBlock> HOLYSTONE_LITHIUM_ORE =
+            holystoneOre("holystone_lithium_ore", UniformInt.of(0, 2), 3.0F, MapColor.QUARTZ);
+    public static final DeferredBlock<DropExperienceBlock> HOLYSTONE_TITANIUM_ORE =
+            holystoneOre("holystone_titanium_ore", UniformInt.of(0, 2), 3.0F, MapColor.QUARTZ);
+
+    // ================================================================
+    // ORE BLOCKS — Vanilla ore dimension variants
+    //
+    // Coal, iron, copper, redstone, lapis, diamond and emerald hosted in
+    // netherrack, End stone and holystone. Drops, XP and tool tier all match
+    // the vanilla overworld ore exactly — these are alternate locations for
+    // the same ore, not buffed versions of it.
+    // ================================================================
+
+    // Nether
+    public static final DeferredBlock<DropExperienceBlock> NETHER_COAL_ORE =
+            netherOre("nether_coal_ore", UniformInt.of(0, 2), 3.0F, MapColor.NETHER);
+    public static final DeferredBlock<DropExperienceBlock> NETHER_IRON_ORE =
+            netherOre("nether_iron_ore", UniformInt.of(0, 0), 3.0F, MapColor.NETHER);
+    public static final DeferredBlock<DropExperienceBlock> NETHER_COPPER_ORE =
+            netherOre("nether_copper_ore", UniformInt.of(0, 0), 3.0F, MapColor.NETHER);
+    public static final DeferredBlock<RedStoneOreBlock> NETHER_REDSTONE_ORE =
+            redstoneOre("nether_redstone_ore", SoundType.NETHER_ORE, 3.0F, MapColor.NETHER);
+    public static final DeferredBlock<DropExperienceBlock> NETHER_LAPIS_ORE =
+            netherOre("nether_lapis_ore", UniformInt.of(2, 5), 3.0F, MapColor.NETHER);
+    public static final DeferredBlock<DropExperienceBlock> NETHER_DIAMOND_ORE =
+            netherOre("nether_diamond_ore", UniformInt.of(3, 7), 3.0F, MapColor.NETHER);
+    public static final DeferredBlock<DropExperienceBlock> NETHER_EMERALD_ORE =
+            netherOre("nether_emerald_ore", UniformInt.of(3, 7), 3.0F, MapColor.NETHER);
+    public static final DeferredBlock<DropExperienceBlock> NETHER_RUBY_ORE =
+            netherOre("nether_ruby_ore", UniformInt.of(3, 7), 3.0F, MapColor.NETHER);
+    public static final DeferredBlock<DropExperienceBlock> NETHER_SAPPHIRE_ORE =
+            netherOre("nether_sapphire_ore", UniformInt.of(3, 7), 3.0F, MapColor.NETHER);
+
+    // End
+    public static final DeferredBlock<DropExperienceBlock> END_COAL_ORE =
+            endOre("end_coal_ore", UniformInt.of(0, 2), 4.5F, MapColor.SAND);
+    public static final DeferredBlock<DropExperienceBlock> END_IRON_ORE =
+            endOre("end_iron_ore", UniformInt.of(0, 0), 4.5F, MapColor.SAND);
+    public static final DeferredBlock<DropExperienceBlock> END_COPPER_ORE =
+            endOre("end_copper_ore", UniformInt.of(0, 0), 4.5F, MapColor.SAND);
+    public static final DeferredBlock<RedStoneOreBlock> END_REDSTONE_ORE =
+            redstoneOre("end_redstone_ore", SoundType.STONE, 4.5F, MapColor.SAND);
+    public static final DeferredBlock<DropExperienceBlock> END_LAPIS_ORE =
+            endOre("end_lapis_ore", UniformInt.of(2, 5), 4.5F, MapColor.SAND);
+    public static final DeferredBlock<DropExperienceBlock> END_DIAMOND_ORE =
+            endOre("end_diamond_ore", UniformInt.of(3, 7), 4.5F, MapColor.SAND);
+    public static final DeferredBlock<DropExperienceBlock> END_EMERALD_ORE =
+            endOre("end_emerald_ore", UniformInt.of(3, 7), 4.5F, MapColor.SAND);
+    public static final DeferredBlock<DropExperienceBlock> END_GOLD_ORE =
+            endOre("end_gold_ore", UniformInt.of(0, 0), 4.5F, MapColor.SAND);
+    public static final DeferredBlock<DropExperienceBlock> END_RUBY_ORE =
+            endOre("end_ruby_ore", UniformInt.of(3, 7), 4.5F, MapColor.SAND);
+    public static final DeferredBlock<DropExperienceBlock> END_SAPPHIRE_ORE =
+            endOre("end_sapphire_ore", UniformInt.of(3, 7), 4.5F, MapColor.SAND);
+
+    // Aether
+    public static final DeferredBlock<DropExperienceBlock> HOLYSTONE_IRON_ORE =
+            holystoneOre("holystone_iron_ore", UniformInt.of(0, 0), 3.0F, MapColor.QUARTZ);
+    public static final DeferredBlock<DropExperienceBlock> HOLYSTONE_COPPER_ORE =
+            holystoneOre("holystone_copper_ore", UniformInt.of(0, 0), 3.0F, MapColor.QUARTZ);
+    public static final DeferredBlock<RedStoneOreBlock> HOLYSTONE_REDSTONE_ORE =
+            redstoneOre("holystone_redstone_ore", SoundType.STONE, 3.0F, MapColor.QUARTZ);
+    public static final DeferredBlock<DropExperienceBlock> HOLYSTONE_LAPIS_ORE =
+            holystoneOre("holystone_lapis_ore", UniformInt.of(2, 5), 3.0F, MapColor.QUARTZ);
+    public static final DeferredBlock<DropExperienceBlock> HOLYSTONE_DIAMOND_ORE =
+            holystoneOre("holystone_diamond_ore", UniformInt.of(3, 7), 3.0F, MapColor.QUARTZ);
+    public static final DeferredBlock<DropExperienceBlock> HOLYSTONE_EMERALD_ORE =
+            holystoneOre("holystone_emerald_ore", UniformInt.of(3, 7), 3.0F, MapColor.QUARTZ);
+    public static final DeferredBlock<DropExperienceBlock> HOLYSTONE_GOLD_ORE =
+            holystoneOre("holystone_gold_ore", UniformInt.of(0, 0), 3.0F, MapColor.QUARTZ);
+    public static final DeferredBlock<DropExperienceBlock> HOLYSTONE_RUBY_ORE =
+            holystoneOre("holystone_ruby_ore", UniformInt.of(3, 7), 3.0F, MapColor.QUARTZ);
+    public static final DeferredBlock<DropExperienceBlock> HOLYSTONE_SAPPHIRE_ORE =
+            holystoneOre("holystone_sapphire_ore", UniformInt.of(3, 7), 3.0F, MapColor.QUARTZ);
+
+
+
+		// ================================================================
+		// ORE BLOCKS — Everything Ores exclusive set
+		// ================================================================
+		public static final DeferredBlock<DropExperienceBlock> NEMONIUM_ORE =
+				stoneOre("nemonium_ore", UniformInt.of(2, 5), 3.0F, MapColor.COLOR_LIGHT_GRAY);
+		public static final DeferredBlock<DropExperienceBlock> DEEPSLATE_NEMONIUM_ORE =
+				deepslateOre("deepslate_nemonium_ore", UniformInt.of(2, 5), 4.5F, MapColor.DEEPSLATE);
+		
     // ================================================================
     // RAW ORE STORAGE BLOCKS  (9 raw ores → 1 block)
     // ================================================================
@@ -185,6 +540,11 @@ public class EOBlocks {
     public static final DeferredBlock<Block> RAW_CHROMITE_BLOCK = rawBlock("raw_chromite_block", 4.5F, MapColor.METAL);
     public static final DeferredBlock<Block> RAW_TUNGSTEN_BLOCK = rawBlock("raw_tungsten_block", 5.5F, MapColor.COLOR_GRAY);
     public static final DeferredBlock<Block> RAW_IRIDIUM_BLOCK  = rawBlock("raw_iridium_block",  4.5F, MapColor.GOLD);
+    public static final DeferredBlock<Block> RAW_LITHIUM_BLOCK  = rawBlock("raw_lithium_block",  4.5F, MapColor.COLOR_LIGHT_GRAY);
+    public static final DeferredBlock<Block> RAW_TITANIUM_BLOCK = rawBlock("raw_titanium_block", 4.5F, MapColor.METAL);
+
+		// Everything Ores exclusive raw ore storage block
+		public static final DeferredBlock<Block> RAW_NEMONIUM_BLOCK = rawBlock("raw_nemonium_block", 4.5F, MapColor.COLOR_LIGHT_GRAY);
 
     // ================================================================
     // METAL STORAGE BLOCKS  (9 ingots → 1 block)
@@ -206,6 +566,9 @@ public class EOBlocks {
     public static final DeferredBlock<Block> CHROMIUM_BLOCK = metalBlock("chromium_block", 5.0F, MapColor.METAL);
     public static final DeferredBlock<Block> TUNGSTEN_BLOCK = metalBlock("tungsten_block", 7.0F, MapColor.COLOR_GRAY);
     public static final DeferredBlock<Block> IRIDIUM_BLOCK  = metalBlock("iridium_block",  6.0F, MapColor.GOLD);
+    // No lithium storage block — TFMG's lithium_block is the only one in the
+    // pack (single-source form, §5.8), so it stays with TFMG.
+    public static final DeferredBlock<Block> TITANIUM_BLOCK = metalBlock("titanium_block", 6.0F, MapColor.METAL);
 
     // ================================================================
     // ALLOY STORAGE BLOCKS  (9 ingots → 1 block, no ore counterpart)
@@ -220,4 +583,14 @@ public class EOBlocks {
 
     // Red Alloy — Cu + Redstone. Absorbs MoreRed red_alloy and EnderIO redstone_alloy.
     public static final DeferredBlock<Block> RED_ALLOY_BLOCK = metalBlock("red_alloy_block", 5.0F, MapColor.COLOR_RED);
+
+		// ================================================================
+		// EVERYTHING ORES EXCLUSIVE STORAGE BLOCKS  (9 ingots → 1 block)
+		// ================================================================
+		public static final DeferredBlock<Block> NEMONIUM_BLOCK = metalBlock("nemonium_block", 5.0F, MapColor.COLOR_LIGHT_GRAY);
+
+    // ================================================================
+    // CAVE DECORATION
+    // ================================================================
+
 }

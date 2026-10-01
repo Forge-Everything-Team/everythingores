@@ -1,1 +1,8 @@
-{"values": ["everythingores:tiny_sulfur_dust"]}
+{
+  "values": [
+    {
+      "id": "everythingores:tiny_sulfur_dust",
+      "required": false
+    }
+  ]
+}

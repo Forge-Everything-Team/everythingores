@@ -1,1 +1,8 @@
-{"values": ["everythingores:iridium_helmet"]}
+{
+  "values": [
+    {
+      "id": "everythingores:iridium_helmet",
+      "required": false
+    }
+  ]
+}

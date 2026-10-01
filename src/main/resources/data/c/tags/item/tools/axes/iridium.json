@@ -1,1 +1,8 @@
-{"values": ["everythingores:iridium_axe"]}
+{
+  "values": [
+    {
+      "id": "everythingores:iridium_axe",
+      "required": false
+    }
+  ]
+}

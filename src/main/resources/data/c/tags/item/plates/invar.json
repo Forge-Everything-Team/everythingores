@@ -1,1 +1,8 @@
-{"values": ["everythingores:invar_plate"]}
+{
+  "values": [
+    {
+      "id": "everythingores:invar_plate",
+      "required": false
+    }
+  ]
+}

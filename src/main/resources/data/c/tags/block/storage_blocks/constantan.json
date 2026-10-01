@@ -1,5 +1,8 @@
 {
   "values": [
-    "everythingores:constantan_block"
+    {
+      "id": "everythingores:constantan_block",
+      "required": false
+    }
   ]
 }

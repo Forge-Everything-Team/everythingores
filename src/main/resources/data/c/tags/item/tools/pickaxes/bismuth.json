@@ -1,1 +1,8 @@
-{"values": ["everythingores:bismuth_pickaxe"]}
+{
+  "values": [
+    {
+      "id": "everythingores:bismuth_pickaxe",
+      "required": false
+    }
+  ]
+}

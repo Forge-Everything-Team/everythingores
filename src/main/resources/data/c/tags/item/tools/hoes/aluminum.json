@@ -1,1 +1,8 @@
-{"values": ["everythingores:aluminum_hoe"]}
+{
+  "values": [
+    {
+      "id": "everythingores:aluminum_hoe",
+      "required": false
+    }
+  ]
+}

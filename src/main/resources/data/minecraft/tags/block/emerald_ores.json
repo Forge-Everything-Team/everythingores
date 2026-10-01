@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "everythingores:nether_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_emerald_ore",
+      "required": false
+    }
+  ]
+}

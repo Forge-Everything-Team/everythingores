@@ -21,3 +21,39 @@ license     = "${mod_license}"
         versionRange = "${minecraft_version_range}"
         ordering     = "NONE"
         side         = "BOTH"
+
+    # Optional: when present, mixins redirect its hardcoded biofuel to everythingores:biofuel.
+    # The mixins are @Pseudo, so nothing is applied if the mod is absent.
+    [[dependencies.everythingores]]
+        modId        = "industrialforegoing"
+        type         = "optional"
+        versionRange = "[1.21-3.6,)"
+        ordering     = "NONE"
+        side         = "BOTH"
+    # Optional: when present, a mixin makes its coke oven output everythingores:creosote.
+    [[dependencies.everythingores]]
+        modId        = "immersiveengineering"
+        type         = "optional"
+        versionRange = "[12.4,)"
+        ordering     = "NONE"
+        side         = "BOTH"
+    # Optional: when present, mixins redirect its hardcoded diesel, oil and diesel bucket
+    # to Everything Ores' fluids. The mixins are @Pseudo, so nothing is applied if absent.
+    [[dependencies.everythingores]]
+        modId        = "stellaris"
+        type         = "optional"
+        versionRange = "[1.4,)"
+        ordering     = "NONE"
+        side         = "BOTH"
+
+    # Optional: places the Sulfur Caves biome when the sulfur_caves config switch is on.
+    # Without it the mod loads normally, but the biome never generates.
+    [[dependencies.everythingores]]
+        modId        = "terrablender"
+        type         = "optional"
+        versionRange = "[4.1,)"
+        ordering     = "AFTER"
+        side         = "BOTH"
+
+[[mixins]]
+    config = "${mod_id}.mixins.json"

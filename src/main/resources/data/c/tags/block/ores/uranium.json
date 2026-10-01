@@ -1,1 +1,24 @@
-{ "values": ["everythingores:uranium_ore", "everythingores:deepslate_uranium_ore"] }
+{
+  "values": [
+    {
+      "id": "everythingores:uranium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_uranium_ore",
+      "required": false
+    }
+  ]
+}

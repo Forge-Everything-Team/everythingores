@@ -1,1 +1,8 @@
-{"values": ["everythingores:invar_shovel"]}
+{
+  "values": [
+    {
+      "id": "everythingores:invar_shovel",
+      "required": false
+    }
+  ]
+}

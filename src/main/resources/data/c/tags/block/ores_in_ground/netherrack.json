@@ -1,0 +1,116 @@
+{
+  "values": [
+    {
+      "id": "everythingores:nether_tin_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_lead_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_silver_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_platinum_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_bismuth_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_chromite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_iridium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_lithium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_coal_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_iron_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_copper_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_chromium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_cassiterite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_cinnabar_ore",
+      "required": false
+    }
+  ]
+}

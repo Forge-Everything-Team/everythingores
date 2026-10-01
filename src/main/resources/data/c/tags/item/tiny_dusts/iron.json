@@ -1,1 +1,8 @@
-{"values": ["everythingores:tiny_iron_dust"]}
+{
+  "values": [
+    {
+      "id": "everythingores:tiny_iron_dust",
+      "required": false
+    }
+  ]
+}

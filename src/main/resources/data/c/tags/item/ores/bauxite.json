@@ -1,0 +1,24 @@
+{
+  "values": [
+    {
+      "id": "everythingores:bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_bauxite_ore",
+      "required": false
+    }
+  ]
+}

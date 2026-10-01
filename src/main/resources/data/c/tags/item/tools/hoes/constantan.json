@@ -1,1 +1,8 @@
-{"values": ["everythingores:constantan_hoe"]}
+{
+  "values": [
+    {
+      "id": "everythingores:constantan_hoe",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "values": [
+    {
+      "id": "everythingores:bronze_leggings",
+      "required": false
+    },
+    {
+      "id": "everythingores:silver_leggings",
+      "required": false
+    },
+    {
+      "id": "everythingores:invar_leggings",
+      "required": false
+    },
+    {
+      "id": "everythingores:steel_leggings",
+      "required": false
+    },
+    {
+      "id": "everythingores:osmium_leggings",
+      "required": false
+    },
+    {
+      "id": "everythingores:platinum_leggings",
+      "required": false
+    },
+    {
+      "id": "everythingores:iridium_leggings",
+      "required": false
+    }
+  ]
+}

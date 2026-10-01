@@ -1,0 +1,18 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "everythingores:material_enabled",
+      "material": "nemonium"
+    }
+  ],
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "ingredient": {
+    "tag": "c:ores/nemonium"
+  },
+  "result": {
+    "id": "everythingores:nemonium_ingot"
+  },
+  "experience": 1.0,
+  "cookingtime": 100
+}

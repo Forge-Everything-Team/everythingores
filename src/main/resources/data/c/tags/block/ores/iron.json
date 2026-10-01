@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "everythingores:nether_iron_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_iron_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_iron_ore",
+      "required": false
+    }
+  ]
+}

@@ -1,5 +1,8 @@
 {
   "values": [
-    "everythingores:tungsten_dust"
+    {
+      "id": "everythingores:tungsten_dust",
+      "required": false
+    }
   ]
 }

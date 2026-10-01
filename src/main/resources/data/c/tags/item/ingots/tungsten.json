@@ -1,5 +1,8 @@
 {
   "values": [
-    "everythingores:tungsten_ingot"
+    {
+      "id": "everythingores:tungsten_ingot",
+      "required": false
+    }
   ]
 }

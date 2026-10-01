@@ -1,5 +1,8 @@
 {
   "values": [
-    "everythingores:bismuth_dust"
+    {
+      "id": "everythingores:bismuth_dust",
+      "required": false
+    }
   ]
 }

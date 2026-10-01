@@ -1,1 +1,8 @@
-{"values": ["everythingores:steel_pickaxe"]}
+{
+  "values": [
+    {
+      "id": "everythingores:steel_pickaxe",
+      "required": false
+    }
+  ]
+}

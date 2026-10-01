@@ -1,12 +1,100 @@
 {
   "values": [
-    "everythingores:uranium_ore",
-    "everythingores:deepslate_uranium_ore",
-    "everythingores:platinum_ore",
-    "everythingores:deepslate_platinum_ore",
-    "everythingores:tungsten_ore",
-    "everythingores:deepslate_tungsten_ore",
-    "everythingores:iridium_ore",
-    "everythingores:deepslate_iridium_ore"
+    {
+      "id": "everythingores:uranium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:platinum_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_platinum_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:iridium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_iridium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_platinum_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_platinum_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_iridium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_iridium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_platinum_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_iridium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nemonium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_nemonium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nemonium_block",
+      "required": false
+    },
+    {
+      "id": "everythingores:raw_nemonium_block",
+      "required": false
+    }
   ]
 }

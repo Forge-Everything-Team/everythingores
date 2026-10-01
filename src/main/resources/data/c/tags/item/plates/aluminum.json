@@ -1,1 +1,8 @@
-{"values": ["everythingores:aluminum_plate"]}
+{
+  "values": [
+    {
+      "id": "everythingores:aluminum_plate",
+      "required": false
+    }
+  ]
+}

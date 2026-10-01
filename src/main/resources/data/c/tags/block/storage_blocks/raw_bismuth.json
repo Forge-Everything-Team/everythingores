@@ -1,5 +1,8 @@
 {
   "values": [
-    "everythingores:raw_bismuth_block"
+    {
+      "id": "everythingores:raw_bismuth_block",
+      "required": false
+    }
   ]
 }

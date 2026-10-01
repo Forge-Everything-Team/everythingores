@@ -1,6 +1,24 @@
 {
   "values": [
-    "everythingores:bismuth_ore",
-    "everythingores:deepslate_bismuth_ore"
+    {
+      "id": "everythingores:bismuth_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_bismuth_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_bismuth_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_bismuth_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_bismuth_ore",
+      "required": false
+    }
   ]
 }

@@ -1,59 +1,504 @@
 {
   "values": [
-    "everythingores:tin_ore",
-    "everythingores:deepslate_tin_ore",
-    "everythingores:lead_ore",
-    "everythingores:deepslate_lead_ore",
-    "everythingores:nickel_ore",
-    "everythingores:deepslate_nickel_ore",
-    "everythingores:bauxite_ore",
-    "everythingores:deepslate_bauxite_ore",
-    "everythingores:zinc_ore",
-    "everythingores:deepslate_zinc_ore",
-    "everythingores:silver_ore",
-    "everythingores:deepslate_silver_ore",
-    "everythingores:saltpeter_ore",
-    "everythingores:deepslate_saltpeter_ore",
-    "everythingores:monazite_ore",
-    "everythingores:deepslate_monazite_ore",
-    "everythingores:osmium_ore",
-    "everythingores:deepslate_osmium_ore",
-    "everythingores:bismuth_ore",
-    "everythingores:deepslate_bismuth_ore",
-    "everythingores:chromium_ore",
-    "everythingores:deepslate_chromium_ore",
-    "everythingores:tin_block",
-    "everythingores:raw_tin_block",
-    "everythingores:lead_block",
-    "everythingores:raw_lead_block",
-    "everythingores:nickel_block",
-    "everythingores:raw_nickel_block",
-    "everythingores:aluminum_block",
-    "everythingores:raw_aluminum_block",
-    "everythingores:zinc_block",
-    "everythingores:raw_zinc_block",
-    "everythingores:silver_block",
-    "everythingores:raw_silver_block",
-    "everythingores:uranium_block",
-    "everythingores:raw_uranium_block",
-    "everythingores:platinum_block",
-    "everythingores:raw_platinum_block",
-    "everythingores:osmium_block",
-    "everythingores:raw_osmium_block",
-    "everythingores:bismuth_block",
-    "everythingores:raw_bismuth_block",
-    "everythingores:chromium_block",
-    "everythingores:raw_chromite_block",
-    "everythingores:tungsten_block",
-    "everythingores:raw_tungsten_block",
-    "everythingores:iridium_block",
-    "everythingores:raw_iridium_block",
-    "everythingores:steel_block",
-    "everythingores:electrum_block",
-    "everythingores:constantan_block",
-    "everythingores:invar_block",
-    "everythingores:bronze_block",
-    "everythingores:stainless_steel_block",
-    "everythingores:red_alloy_block"
+    {
+      "id": "everythingores:tin_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_tin_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:lead_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_lead_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nickel_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:zinc_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:silver_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_silver_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:saltpeter_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_saltpeter_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:monazite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_monazite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:osmium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:bismuth_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_bismuth_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:chromite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_chromite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:tin_block",
+      "required": false
+    },
+    {
+      "id": "everythingores:raw_tin_block",
+      "required": false
+    },
+    {
+      "id": "everythingores:lead_block",
+      "required": false
+    },
+    {
+      "id": "everythingores:raw_lead_block",
+      "required": false
+    },
+    {
+      "id": "everythingores:nickel_block",
+      "required": false
+    },
+    {
+      "id": "everythingores:raw_nickel_block",
+      "required": false
+    },
+    {
+      "id": "everythingores:aluminum_block",
+      "required": false
+    },
+    {
+      "id": "everythingores:raw_aluminum_block",
+      "required": false
+    },
+    {
+      "id": "everythingores:zinc_block",
+      "required": false
+    },
+    {
+      "id": "everythingores:raw_zinc_block",
+      "required": false
+    },
+    {
+      "id": "everythingores:silver_block",
+      "required": false
+    },
+    {
+      "id": "everythingores:raw_silver_block",
+      "required": false
+    },
+    {
+      "id": "everythingores:uranium_block",
+      "required": false
+    },
+    {
+      "id": "everythingores:raw_uranium_block",
+      "required": false
+    },
+    {
+      "id": "everythingores:platinum_block",
+      "required": false
+    },
+    {
+      "id": "everythingores:raw_platinum_block",
+      "required": false
+    },
+    {
+      "id": "everythingores:osmium_block",
+      "required": false
+    },
+    {
+      "id": "everythingores:raw_osmium_block",
+      "required": false
+    },
+    {
+      "id": "everythingores:bismuth_block",
+      "required": false
+    },
+    {
+      "id": "everythingores:raw_bismuth_block",
+      "required": false
+    },
+    {
+      "id": "everythingores:chromium_block",
+      "required": false
+    },
+    {
+      "id": "everythingores:raw_chromite_block",
+      "required": false
+    },
+    {
+      "id": "everythingores:tungsten_block",
+      "required": false
+    },
+    {
+      "id": "everythingores:raw_tungsten_block",
+      "required": false
+    },
+    {
+      "id": "everythingores:iridium_block",
+      "required": false
+    },
+    {
+      "id": "everythingores:raw_iridium_block",
+      "required": false
+    },
+    {
+      "id": "everythingores:steel_block",
+      "required": false
+    },
+    {
+      "id": "everythingores:electrum_block",
+      "required": false
+    },
+    {
+      "id": "everythingores:constantan_block",
+      "required": false
+    },
+    {
+      "id": "everythingores:invar_block",
+      "required": false
+    },
+    {
+      "id": "everythingores:bronze_block",
+      "required": false
+    },
+    {
+      "id": "everythingores:stainless_steel_block",
+      "required": false
+    },
+    {
+      "id": "everythingores:red_alloy_block",
+      "required": false
+    },
+    {
+      "id": "everythingores:lithium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_lithium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:titanium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:raw_lithium_block",
+      "required": false
+    },
+    {
+      "id": "everythingores:raw_titanium_block",
+      "required": false
+    },
+    {
+      "id": "everythingores:titanium_block",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_tin_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_tin_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_lead_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_lead_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_silver_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_silver_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_bismuth_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_bismuth_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_chromite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_chromite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_lithium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_lithium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_tin_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_lead_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_silver_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_bismuth_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_chromite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_lithium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_gold_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_gold_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:chromium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_chromium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_chromium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_chromium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_chromium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:cinnabar_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_cinnabar_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_cinnabar_ore",
+      "required": false
+    }
   ]
 }

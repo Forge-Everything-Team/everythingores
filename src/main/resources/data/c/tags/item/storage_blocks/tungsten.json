@@ -1,5 +1,8 @@
 {
   "values": [
-    "everythingores:tungsten_block"
+    {
+      "id": "everythingores:tungsten_block",
+      "required": false
+    }
   ]
 }

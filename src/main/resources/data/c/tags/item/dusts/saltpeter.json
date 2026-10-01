@@ -1,1 +1,8 @@
-{ "values": ["everythingores:saltpeter"] }
+{
+  "values": [
+    {
+      "id": "everythingores:saltpeter",
+      "required": false
+    }
+  ]
+}

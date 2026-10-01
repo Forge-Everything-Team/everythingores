@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "everythingores:material_enabled",
+      "material": "sulfur"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "everythingores:sulfur_caves",
+      "enabled": true
+    }
+  ],
+  "type": "mekanism:crushing",
+  "input": {
+    "count": 1,
+    "item": "everythingores:sulfur_block"
+  },
+  "output": {
+    "count": 4,
+    "id": "everythingores:sulfur_dust"
+  }
+}

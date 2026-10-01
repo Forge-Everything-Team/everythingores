@@ -1,1 +1,8 @@
-{"values": ["everythingores:iridium_sword"]}
+{
+  "values": [
+    {
+      "id": "everythingores:iridium_sword",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "everythingores:titanium_ingot",
+      "required": false
+    },
+    {
+      "id": "electrodynamics:ingottitanium",
+      "required": false
+    },
+    {
+      "id": "modern_industrialization:titanium_ingot",
+      "required": false
+    }
+  ]
+}

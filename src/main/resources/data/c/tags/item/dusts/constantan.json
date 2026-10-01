@@ -1,5 +1,8 @@
 {
   "values": [
-    "everythingores:constantan_dust"
+    {
+      "id": "everythingores:constantan_dust",
+      "required": false
+    }
   ]
 }

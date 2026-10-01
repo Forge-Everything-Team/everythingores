@@ -1,5 +1,8 @@
 {
   "values": [
-    "everythingores:raw_silver_block"
+    {
+      "id": "everythingores:raw_silver_block",
+      "required": false
+    }
   ]
 }

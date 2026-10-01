@@ -1,0 +1,68 @@
+{
+  "values": [
+    {
+      "id": "everythingores:nether_coal_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_coal_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_iron_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_iron_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_iron_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_copper_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_copper_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_copper_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:cassiterite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_cassiterite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_cassiterite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_cassiterite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_cassiterite_ore",
+      "required": false
+    }
+  ]
+}

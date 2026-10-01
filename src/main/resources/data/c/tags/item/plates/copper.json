@@ -1,1 +1,8 @@
-{"values": ["everythingores:copper_plate"]}
+{
+  "values": [
+    {
+      "id": "everythingores:copper_plate",
+      "required": false
+    }
+  ]
+}

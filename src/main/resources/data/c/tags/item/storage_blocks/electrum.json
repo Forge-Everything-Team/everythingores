@@ -1,5 +1,8 @@
 {
   "values": [
-    "everythingores:electrum_block"
+    {
+      "id": "everythingores:electrum_block",
+      "required": false
+    }
   ]
 }

@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "everythingores:raw_lithium_block",
+      "required": false
+    },
+    {
+      "id": "tfmg:raw_lithium_block",
+      "required": false
+    }
+  ]
+}

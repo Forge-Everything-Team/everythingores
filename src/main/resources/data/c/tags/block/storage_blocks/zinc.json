@@ -1,5 +1,8 @@
 {
   "values": [
-    "everythingores:zinc_block"
+    {
+      "id": "everythingores:zinc_block",
+      "required": false
+    }
   ]
 }

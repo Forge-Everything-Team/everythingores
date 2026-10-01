@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "everythingores:material_enabled",
+      "material": "nemonium"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:storage_blocks/nemonium"
+    }
+  ],
+  "result": {
+    "id": "everythingores:nemonium_ingot",
+    "count": 9
+  }
+}

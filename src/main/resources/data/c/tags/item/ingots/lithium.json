@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "everythingores:lithium_ingot",
+      "required": false
+    },
+    {
+      "id": "electrodynamics:ingotlithium",
+      "required": false
+    },
+    {
+      "id": "tfmg:lithium_ingot",
+      "required": false
+    }
+  ]
+}

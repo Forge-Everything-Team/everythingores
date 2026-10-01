@@ -1,5 +1,8 @@
 {
   "values": [
-    "everythingores:platinum_dust"
+    {
+      "id": "everythingores:platinum_dust",
+      "required": false
+    }
   ]
 }

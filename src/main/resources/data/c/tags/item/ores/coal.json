@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "everythingores:nether_coal_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_coal_ore",
+      "required": false
+    }
+  ]
+}

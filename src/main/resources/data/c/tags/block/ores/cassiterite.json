@@ -1,0 +1,44 @@
+{
+  "values": [
+    {
+      "id": "everythingores:cassiterite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_cassiterite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_cassiterite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_cassiterite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_cassiterite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:tin_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_tin_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_tin_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_tin_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_tin_ore",
+      "required": false
+    }
+  ]
+}

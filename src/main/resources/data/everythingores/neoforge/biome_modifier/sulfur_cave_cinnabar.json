@@ -1,0 +1,20 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "everythingores:material_enabled",
+      "material": "cinnabar"
+    },
+    {
+      "type": "everythingores:material_enabled",
+      "material": "sulfur"
+    },
+    {
+      "type": "everythingores:sulfur_caves",
+      "enabled": true
+    }
+  ],
+  "type": "neoforge:add_features",
+  "biomes": "everythingores:sulfur_caves",
+  "features": "everythingores:sulfur_cave_cinnabar",
+  "step": "underground_ores"
+}

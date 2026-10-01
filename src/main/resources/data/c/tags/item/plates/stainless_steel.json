@@ -1,1 +1,8 @@
-{"values": ["everythingores:stainless_steel_plate"]}
+{
+  "values": [
+    {
+      "id": "everythingores:stainless_steel_plate",
+      "required": false
+    }
+  ]
+}

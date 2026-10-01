@@ -1,1 +1,18 @@
-{ "values": ["minecraft:copper_ore", "minecraft:deepslate_copper_ore"] }
+{
+  "values": [
+    "minecraft:copper_ore",
+    "minecraft:deepslate_copper_ore",
+    {
+      "id": "everythingores:nether_copper_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_copper_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_copper_ore",
+      "required": false
+    }
+  ]
+}

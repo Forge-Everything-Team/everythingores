@@ -1,5 +1,8 @@
 {
   "values": [
-    "everythingores:steel_ingot"
+    {
+      "id": "everythingores:steel_ingot",
+      "required": false
+    }
   ]
 }

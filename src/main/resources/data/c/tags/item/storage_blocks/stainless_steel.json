@@ -1,5 +1,8 @@
 {
   "values": [
-    "everythingores:stainless_steel_block"
+    {
+      "id": "everythingores:stainless_steel_block",
+      "required": false
+    }
   ]
 }

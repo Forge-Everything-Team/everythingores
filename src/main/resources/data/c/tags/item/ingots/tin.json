@@ -1,1 +1,8 @@
-{ "values": ["everythingores:tin_ingot"] }
+{
+  "values": [
+    {
+      "id": "everythingores:tin_ingot",
+      "required": false
+    }
+  ]
+}

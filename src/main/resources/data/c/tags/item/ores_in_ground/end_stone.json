@@ -1,0 +1,116 @@
+{
+  "values": [
+    {
+      "id": "everythingores:end_aluminum_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_bismuth_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_chromite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_coal_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_copper_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_gold_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_iridium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_iron_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_lead_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_lithium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_platinum_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_ruby_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_sapphire_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_silver_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_tin_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_bauxite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_chromium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_cassiterite_ore",
+      "required": false
+    }
+  ]
+}

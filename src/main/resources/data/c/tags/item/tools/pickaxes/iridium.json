@@ -1,1 +1,8 @@
-{"values": ["everythingores:iridium_pickaxe"]}
+{
+  "values": [
+    {
+      "id": "everythingores:iridium_pickaxe",
+      "required": false
+    }
+  ]
+}

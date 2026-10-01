@@ -1,0 +1,37 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "everythingores:material_enabled",
+      "material": "cinnabar"
+    },
+    {
+      "type": "everythingores:sulfur_caves",
+      "enabled": false
+    }
+  ],
+  "type": "minecraft:ore",
+  "config": {
+    "size": 7,
+    "discard_chance_on_air_exposure": 0.0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:stone_ore_replaceables"
+        },
+        "state": {
+          "Name": "everythingores:cinnabar_ore"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:deepslate_ore_replaceables"
+        },
+        "state": {
+          "Name": "everythingores:deepslate_cinnabar_ore"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "values": [
+    {
+      "id": "everythingores:silver_nugget",
+      "required": false
+    },
+    {
+      "id": "electrodynamics:nuggetsilver",
+      "required": false
+    },
+    {
+      "id": "iceandfire:silver_nugget",
+      "required": false
+    },
+    {
+      "id": "modern_industrialization:silver_nugget",
+      "required": false
+    },
+    {
+      "id": "occultism:silver_nugget",
+      "required": false
+    },
+    {
+      "id": "silentgems:silver_nugget",
+      "required": false
+    },
+    {
+      "id": "werewolves:silver_nugget",
+      "required": false
+    }
+  ]
+}

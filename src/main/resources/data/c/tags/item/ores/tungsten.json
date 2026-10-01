@@ -1,6 +1,24 @@
 {
   "values": [
-    "everythingores:tungsten_ore",
-    "everythingores:deepslate_tungsten_ore"
+    {
+      "id": "everythingores:tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_tungsten_ore",
+      "required": false
+    }
   ]
 }

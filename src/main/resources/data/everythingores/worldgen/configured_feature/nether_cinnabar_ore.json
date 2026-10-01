@@ -1,0 +1,28 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "everythingores:material_enabled",
+      "material": "cinnabar"
+    },
+    {
+      "type": "everythingores:sulfur_caves",
+      "enabled": false
+    }
+  ],
+  "type": "minecraft:ore",
+  "config": {
+    "size": 7,
+    "discard_chance_on_air_exposure": 0.0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:base_stone_nether"
+        },
+        "state": {
+          "Name": "everythingores:nether_cinnabar_ore"
+        }
+      }
+    ]
+  }
+}

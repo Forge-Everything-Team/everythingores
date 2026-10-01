@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "everythingores:material_enabled",
+      "material": "titanium"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:storage_blocks/raw_titanium"
+    }
+  ],
+  "result": {
+    "id": "everythingores:raw_titanium",
+    "count": 9
+  }
+}

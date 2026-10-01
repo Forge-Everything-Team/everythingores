@@ -1,1 +1,12 @@
-{ "values": ["everythingores:salt_ore", "everythingores:deepslate_salt_ore"] }
+{
+  "values": [
+    {
+      "id": "everythingores:salt_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_salt_ore",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "everythingores:titanium_plate",
+      "required": false
+    },
+    {
+      "id": "electrodynamics:platetitanium",
+      "required": false
+    },
+    {
+      "id": "modern_industrialization:titanium_plate",
+      "required": false
+    }
+  ]
+}

@@ -1,1 +1,8 @@
-{"values": ["everythingores:electrum_plate"]}
+{
+  "values": [
+    {
+      "id": "everythingores:electrum_plate",
+      "required": false
+    }
+  ]
+}

@@ -1,1 +1,8 @@
-{ "values": ["everythingores:lead_ingot"] }
+{
+  "values": [
+    {
+      "id": "everythingores:lead_ingot",
+      "required": false
+    }
+  ]
+}

@@ -1,1 +1,8 @@
-{"values": ["everythingores:bismuth_plate"]}
+{
+  "values": [
+    {
+      "id": "everythingores:bismuth_plate",
+      "required": false
+    }
+  ]
+}

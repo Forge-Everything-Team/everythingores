@@ -1,5 +1,8 @@
 {
   "values": [
-    "everythingores:raw_tin_block"
+    {
+      "id": "everythingores:raw_tin_block",
+      "required": false
+    }
   ]
 }

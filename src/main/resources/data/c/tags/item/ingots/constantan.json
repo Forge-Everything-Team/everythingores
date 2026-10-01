@@ -1,5 +1,8 @@
 {
   "values": [
-    "everythingores:constantan_ingot"
+    {
+      "id": "everythingores:constantan_ingot",
+      "required": false
+    }
   ]
 }

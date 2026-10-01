@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "everythingores:nether_copper_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_copper_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_copper_ore",
+      "required": false
+    }
+  ]
+}
