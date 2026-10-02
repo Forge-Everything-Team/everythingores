@@ -7,6 +7,18 @@
     {
       "id": "everythingores:deepslate_fluorite_ore",
       "required": false
+    },
+    {
+      "id": "everythingores:nether_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_fluorite_ore",
+      "required": false
     }
   ]
 }

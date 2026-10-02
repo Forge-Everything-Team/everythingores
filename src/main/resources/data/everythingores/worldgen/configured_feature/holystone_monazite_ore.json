@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "everythingores:material_enabled",
+      "material": "monazite"
+    }
+  ],
+  "type": "minecraft:ore",
+  "config": {
+    "size": 4,
+    "discard_chance_on_air_exposure": 0.0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "minecraft:tag_match",
+          "tag": "everythingores:holystone_ore_replaceables"
+        },
+        "state": {
+          "Name": "everythingores:holystone_monazite_ore"
+        }
+      }
+    ]
+  }
+}

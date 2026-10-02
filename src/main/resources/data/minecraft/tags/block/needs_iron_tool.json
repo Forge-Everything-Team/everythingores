@@ -499,6 +499,34 @@
     {
       "id": "everythingores:nether_cinnabar_ore",
       "required": false
+    },
+    {
+      "id": "everythingores:nether_saltpeter_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_saltpeter_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_saltpeter_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_monazite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_monazite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_monazite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:raw_thorium_block",
+      "required": false
     }
   ]
 }

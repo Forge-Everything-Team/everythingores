@@ -7,6 +7,18 @@
     {
       "id": "everythingores:deepslate_monazite_ore",
       "required": false
+    },
+    {
+      "id": "everythingores:nether_monazite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_monazite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_monazite_ore",
+      "required": false
     }
   ]
 }

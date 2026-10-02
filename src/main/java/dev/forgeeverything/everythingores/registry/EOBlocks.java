@@ -178,6 +178,15 @@ public class EOBlocks {
     public static final DeferredBlock<DropExperienceBlock> DEEPSLATE_URANIUM_ORE =
             deepslateOre("deepslate_uranium_ore", UniformInt.of(1, 4), 4.5F, MapColor.DEEPSLATE);
 
+    // Thorium — Electrodynamics duplicate; Nuclear Science turns the raw ore
+    // into thorianite dust for molten salt reactor fuel. No ingot or dust:
+    // nothing in the pack uses a thorium ingot, and thorianite dust is
+    // single-source (§5.8), so it stays with Nuclear Science.
+    public static final DeferredBlock<DropExperienceBlock> THORIUM_ORE =
+            stoneOre("thorium_ore", UniformInt.of(1, 4), 3.0F, MapColor.COLOR_GRAY);
+    public static final DeferredBlock<DropExperienceBlock> DEEPSLATE_THORIUM_ORE =
+            deepslateOre("deepslate_thorium_ore", UniformInt.of(1, 4), 4.5F, MapColor.DEEPSLATE);
+
     public static final DeferredBlock<DropExperienceBlock> PLATINUM_ORE =
             stoneOre("platinum_ore", UniformInt.of(2, 5), 3.0F, MapColor.METAL);
     public static final DeferredBlock<DropExperienceBlock> DEEPSLATE_PLATINUM_ORE =
@@ -304,10 +313,10 @@ public class EOBlocks {
     // ================================================================
     // ORE BLOCKS — Nether variants
     //
-    // Netherrack-hosted duplicates of the metallic ores. Same raw drop and
-    // XP as the stone form; the Nether is an alternate source, not a richer
-    // one. Non-metallic ores (sulfur, salt, saltpeter, monazite, fluorite)
-    // have no Nether form.
+    // Netherrack-hosted duplicates of the Overworld ores. Same drop and XP
+    // as the stone form; the Nether is an alternate source, not a richer
+    // one. Sulfur is the one ore with no Nether form - the Nether gets 26.2
+    // style blocks of sulfur instead.
     // ================================================================
 
     public static final DeferredBlock<DropExperienceBlock> NETHER_TIN_ORE =
@@ -348,11 +357,22 @@ public class EOBlocks {
             netherOre("nether_lithium_ore", UniformInt.of(0, 2), 3.0F, MapColor.NETHER);
     public static final DeferredBlock<DropExperienceBlock> NETHER_TITANIUM_ORE =
             netherOre("nether_titanium_ore", UniformInt.of(0, 2), 3.0F, MapColor.NETHER);
+    public static final DeferredBlock<DropExperienceBlock> NETHER_THORIUM_ORE =
+            netherOre("nether_thorium_ore", UniformInt.of(1, 4), 3.0F, MapColor.NETHER);
+    // Minerals - drop their crystal or salt directly, like the stone form.
+    public static final DeferredBlock<DropExperienceBlock> NETHER_SALTPETER_ORE =
+            netherOre("nether_saltpeter_ore", UniformInt.of(1, 3), 2.0F, MapColor.NETHER);
+    public static final DeferredBlock<DropExperienceBlock> NETHER_SALT_ORE =
+            netherOre("nether_salt_ore", UniformInt.of(0, 1), 2.0F, MapColor.NETHER);
+    public static final DeferredBlock<DropExperienceBlock> NETHER_MONAZITE_ORE =
+            netherOre("nether_monazite_ore", UniformInt.of(2, 5), 3.0F, MapColor.NETHER);
+    public static final DeferredBlock<DropExperienceBlock> NETHER_FLUORITE_ORE =
+            netherOre("nether_fluorite_ore", UniformInt.of(2, 4), 2.0F, MapColor.NETHER);
 
     // ================================================================
     // ORE BLOCKS — End variants
     //
-    // End-stone-hosted duplicates of the same fifteen metals. Deepslate-grade
+    // End-stone-hosted duplicates of the same ores. Deepslate-grade
     // hardness — End stone is the late-game host rock.
     // ================================================================
 
@@ -392,11 +412,22 @@ public class EOBlocks {
             endOre("end_lithium_ore", UniformInt.of(0, 2), 4.5F, MapColor.SAND);
     public static final DeferredBlock<DropExperienceBlock> END_TITANIUM_ORE =
             endOre("end_titanium_ore", UniformInt.of(0, 2), 4.5F, MapColor.SAND);
+    public static final DeferredBlock<DropExperienceBlock> END_THORIUM_ORE =
+            endOre("end_thorium_ore", UniformInt.of(1, 4), 4.5F, MapColor.SAND);
+    // Minerals - drop their crystal or salt directly, like the stone form.
+    public static final DeferredBlock<DropExperienceBlock> END_SALTPETER_ORE =
+            endOre("end_saltpeter_ore", UniformInt.of(1, 3), 3.5F, MapColor.SAND);
+    public static final DeferredBlock<DropExperienceBlock> END_SALT_ORE =
+            endOre("end_salt_ore", UniformInt.of(0, 1), 3.5F, MapColor.SAND);
+    public static final DeferredBlock<DropExperienceBlock> END_MONAZITE_ORE =
+            endOre("end_monazite_ore", UniformInt.of(2, 5), 4.5F, MapColor.SAND);
+    public static final DeferredBlock<DropExperienceBlock> END_FLUORITE_ORE =
+            endOre("end_fluorite_ore", UniformInt.of(2, 4), 3.5F, MapColor.SAND);
 
     // ================================================================
     // ORE BLOCKS — Holystone variants
     //
-    // Holystone-hosted duplicates of the same fifteen metals. The Aether is
+    // Holystone-hosted duplicates of the same ores. The Aether is
     // an optional dimension: these blocks always register, but they only
     // generate when the Aether mod supplies the host rock and biomes behind
     // everythingores:holystone_ore_replaceables / everythingores:is_aether.
@@ -438,6 +469,17 @@ public class EOBlocks {
             holystoneOre("holystone_lithium_ore", UniformInt.of(0, 2), 3.0F, MapColor.QUARTZ);
     public static final DeferredBlock<DropExperienceBlock> HOLYSTONE_TITANIUM_ORE =
             holystoneOre("holystone_titanium_ore", UniformInt.of(0, 2), 3.0F, MapColor.QUARTZ);
+    public static final DeferredBlock<DropExperienceBlock> HOLYSTONE_THORIUM_ORE =
+            holystoneOre("holystone_thorium_ore", UniformInt.of(1, 4), 3.0F, MapColor.QUARTZ);
+    // Minerals - drop their crystal or salt directly, like the stone form.
+    public static final DeferredBlock<DropExperienceBlock> HOLYSTONE_SALTPETER_ORE =
+            holystoneOre("holystone_saltpeter_ore", UniformInt.of(1, 3), 2.0F, MapColor.QUARTZ);
+    public static final DeferredBlock<DropExperienceBlock> HOLYSTONE_SALT_ORE =
+            holystoneOre("holystone_salt_ore", UniformInt.of(0, 1), 2.0F, MapColor.QUARTZ);
+    public static final DeferredBlock<DropExperienceBlock> HOLYSTONE_MONAZITE_ORE =
+            holystoneOre("holystone_monazite_ore", UniformInt.of(2, 5), 3.0F, MapColor.QUARTZ);
+    public static final DeferredBlock<DropExperienceBlock> HOLYSTONE_FLUORITE_ORE =
+            holystoneOre("holystone_fluorite_ore", UniformInt.of(2, 4), 2.0F, MapColor.QUARTZ);
 
     // ================================================================
     // ORE BLOCKS — Vanilla ore dimension variants
@@ -542,6 +584,7 @@ public class EOBlocks {
     public static final DeferredBlock<Block> RAW_IRIDIUM_BLOCK  = rawBlock("raw_iridium_block",  4.5F, MapColor.GOLD);
     public static final DeferredBlock<Block> RAW_LITHIUM_BLOCK  = rawBlock("raw_lithium_block",  4.5F, MapColor.COLOR_LIGHT_GRAY);
     public static final DeferredBlock<Block> RAW_TITANIUM_BLOCK = rawBlock("raw_titanium_block", 4.5F, MapColor.METAL);
+    public static final DeferredBlock<Block> RAW_THORIUM_BLOCK  = rawBlock("raw_thorium_block",  4.5F, MapColor.COLOR_GRAY);
 
 		// Everything Ores exclusive raw ore storage block
 		public static final DeferredBlock<Block> RAW_NEMONIUM_BLOCK = rawBlock("raw_nemonium_block", 4.5F, MapColor.COLOR_LIGHT_GRAY);

@@ -111,6 +111,26 @@
     {
       "id": "everythingores:nether_cinnabar_ore",
       "required": false
+    },
+    {
+      "id": "everythingores:nether_saltpeter_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_salt_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_monazite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_thorium_ore",
+      "required": false
     }
   ]
 }

@@ -7,6 +7,18 @@
     {
       "id": "everythingores:deepslate_saltpeter_ore",
       "required": false
+    },
+    {
+      "id": "everythingores:nether_saltpeter_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_saltpeter_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_saltpeter_ore",
+      "required": false
     }
   ]
 }

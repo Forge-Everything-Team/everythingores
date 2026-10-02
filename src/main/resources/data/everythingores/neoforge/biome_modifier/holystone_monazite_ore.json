@@ -1,0 +1,12 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "everythingores:material_enabled",
+      "material": "monazite"
+    }
+  ],
+  "type": "neoforge:add_features",
+  "biomes": "#everythingores:is_aether",
+  "features": "everythingores:holystone_monazite_ore",
+  "step": "underground_ores"
+}

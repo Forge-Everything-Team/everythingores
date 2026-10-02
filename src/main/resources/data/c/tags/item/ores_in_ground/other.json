@@ -183,6 +183,46 @@
     {
       "id": "everythingores:end_sapphire_ore",
       "required": false
+    },
+    {
+      "id": "everythingores:end_saltpeter_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_salt_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_monazite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_thorium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_saltpeter_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_salt_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_monazite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_thorium_ore",
+      "required": false
     }
   ]
 }

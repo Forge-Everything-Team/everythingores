@@ -70,6 +70,8 @@ public class EOCreativeTab {
                         add(output, EOItems.DEEPSLATE_SILVER_ORE_ITEM);
                         add(output, EOItems.URANIUM_ORE_ITEM);
                         add(output, EOItems.DEEPSLATE_URANIUM_ORE_ITEM);
+                        add(output, EOItems.THORIUM_ORE_ITEM);
+                        add(output, EOItems.DEEPSLATE_THORIUM_ORE_ITEM);
                         add(output, EOItems.PLATINUM_ORE_ITEM);
                         add(output, EOItems.DEEPSLATE_PLATINUM_ORE_ITEM);
                         add(output, EOItems.SULFUR_ORE_ITEM);
@@ -125,6 +127,11 @@ public class EOCreativeTab {
                         add(output, EOItems.NETHER_IRIDIUM_ORE_ITEM);
                         add(output, EOItems.NETHER_LITHIUM_ORE_ITEM);
                         add(output, EOItems.NETHER_TITANIUM_ORE_ITEM);
+                        add(output, EOItems.NETHER_THORIUM_ORE_ITEM);
+                        add(output, EOItems.NETHER_SALTPETER_ORE_ITEM);
+                        add(output, EOItems.NETHER_SALT_ORE_ITEM);
+                        add(output, EOItems.NETHER_MONAZITE_ORE_ITEM);
+                        add(output, EOItems.NETHER_FLUORITE_ORE_ITEM);
 
                         // ── End ore variants ────────────────────────────────────
                         add(output, EOItems.END_TIN_ORE_ITEM);
@@ -145,6 +152,11 @@ public class EOCreativeTab {
                         add(output, EOItems.END_IRIDIUM_ORE_ITEM);
                         add(output, EOItems.END_LITHIUM_ORE_ITEM);
                         add(output, EOItems.END_TITANIUM_ORE_ITEM);
+                        add(output, EOItems.END_THORIUM_ORE_ITEM);
+                        add(output, EOItems.END_SALTPETER_ORE_ITEM);
+                        add(output, EOItems.END_SALT_ORE_ITEM);
+                        add(output, EOItems.END_MONAZITE_ORE_ITEM);
+                        add(output, EOItems.END_FLUORITE_ORE_ITEM);
 
                         // ── Holystone ore variants ─────────────────────────────────
                         add(output, EOItems.HOLYSTONE_TIN_ORE_ITEM);
@@ -165,6 +177,11 @@ public class EOCreativeTab {
                         add(output, EOItems.HOLYSTONE_IRIDIUM_ORE_ITEM);
                         add(output, EOItems.HOLYSTONE_LITHIUM_ORE_ITEM);
                         add(output, EOItems.HOLYSTONE_TITANIUM_ORE_ITEM);
+                        add(output, EOItems.HOLYSTONE_THORIUM_ORE_ITEM);
+                        add(output, EOItems.HOLYSTONE_SALTPETER_ORE_ITEM);
+                        add(output, EOItems.HOLYSTONE_SALT_ORE_ITEM);
+                        add(output, EOItems.HOLYSTONE_MONAZITE_ORE_ITEM);
+                        add(output, EOItems.HOLYSTONE_FLUORITE_ORE_ITEM);
 
                         // ── Vanilla ore variants — Nether ───────────────────────
                         add(output, EOItems.NETHER_COAL_ORE_ITEM);
@@ -220,6 +237,7 @@ public class EOCreativeTab {
                         add(output, EOItems.RAW_IRIDIUM);
                         add(output, EOItems.RAW_LITHIUM);
                         add(output, EOItems.RAW_TITANIUM);
+                        add(output, EOItems.RAW_THORIUM);
 
 												// ── Everything Ores exclusive raw ores ─────────────────────────────
 												add(output, EOItems.RAW_NEMONIUM);
@@ -240,6 +258,7 @@ public class EOCreativeTab {
                         add(output, EOItems.RAW_IRIDIUM_BLOCK_ITEM);
                         add(output, EOItems.RAW_LITHIUM_BLOCK_ITEM);
                         add(output, EOItems.RAW_TITANIUM_BLOCK_ITEM);
+                        add(output, EOItems.RAW_THORIUM_BLOCK_ITEM);
 
 												// ── Everything Ores exclusive raw ore storage blocks ─────────────────────────────
 												add(output, EOItems.RAW_NEMONIUM_BLOCK_ITEM);

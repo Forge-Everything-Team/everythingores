@@ -699,6 +699,90 @@
     {
       "id": "everythingores:nether_cinnabar_ore",
       "required": false
+    },
+    {
+      "id": "everythingores:thorium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_thorium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_thorium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_thorium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_thorium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:raw_thorium_block",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_saltpeter_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_salt_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_monazite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_thorium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_saltpeter_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_salt_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_monazite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_thorium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_saltpeter_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_salt_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_monazite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_thorium_ore",
+      "required": false
     }
   ]
 }

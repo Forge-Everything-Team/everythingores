@@ -61,6 +61,8 @@ public class EOItems {
     public static final DeferredItem<BlockItem> DEEPSLATE_SILVER_ORE_ITEM    = blockItem(EOBlocks.DEEPSLATE_SILVER_ORE);
     public static final DeferredItem<BlockItem> URANIUM_ORE_ITEM             = blockItem(EOBlocks.URANIUM_ORE);
     public static final DeferredItem<BlockItem> DEEPSLATE_URANIUM_ORE_ITEM   = blockItem(EOBlocks.DEEPSLATE_URANIUM_ORE);
+    public static final DeferredItem<BlockItem> THORIUM_ORE_ITEM             = blockItem(EOBlocks.THORIUM_ORE);
+    public static final DeferredItem<BlockItem> DEEPSLATE_THORIUM_ORE_ITEM   = blockItem(EOBlocks.DEEPSLATE_THORIUM_ORE);
     public static final DeferredItem<BlockItem> PLATINUM_ORE_ITEM            = blockItem(EOBlocks.PLATINUM_ORE);
     public static final DeferredItem<BlockItem> DEEPSLATE_PLATINUM_ORE_ITEM  = blockItem(EOBlocks.DEEPSLATE_PLATINUM_ORE);
     public static final DeferredItem<BlockItem> SULFUR_ORE_ITEM              = blockItem(EOBlocks.SULFUR_ORE);
@@ -118,6 +120,11 @@ public class EOItems {
 		public static final DeferredItem<BlockItem> NETHER_IRIDIUM_ORE_ITEM      = blockItem(EOBlocks.NETHER_IRIDIUM_ORE);
 		public static final DeferredItem<BlockItem> NETHER_LITHIUM_ORE_ITEM      = blockItem(EOBlocks.NETHER_LITHIUM_ORE);
 		public static final DeferredItem<BlockItem> NETHER_TITANIUM_ORE_ITEM     = blockItem(EOBlocks.NETHER_TITANIUM_ORE);
+		public static final DeferredItem<BlockItem> NETHER_THORIUM_ORE_ITEM = blockItem(EOBlocks.NETHER_THORIUM_ORE);
+		public static final DeferredItem<BlockItem> NETHER_SALTPETER_ORE_ITEM = blockItem(EOBlocks.NETHER_SALTPETER_ORE);
+		public static final DeferredItem<BlockItem> NETHER_SALT_ORE_ITEM = blockItem(EOBlocks.NETHER_SALT_ORE);
+		public static final DeferredItem<BlockItem> NETHER_MONAZITE_ORE_ITEM = blockItem(EOBlocks.NETHER_MONAZITE_ORE);
+		public static final DeferredItem<BlockItem> NETHER_FLUORITE_ORE_ITEM = blockItem(EOBlocks.NETHER_FLUORITE_ORE);
 
 		// End Ore Variants
 		public static final DeferredItem<BlockItem> END_TIN_ORE_ITEM             = blockItem(EOBlocks.END_TIN_ORE);
@@ -138,6 +145,11 @@ public class EOItems {
 		public static final DeferredItem<BlockItem> END_IRIDIUM_ORE_ITEM         = blockItem(EOBlocks.END_IRIDIUM_ORE);
 		public static final DeferredItem<BlockItem> END_LITHIUM_ORE_ITEM         = blockItem(EOBlocks.END_LITHIUM_ORE);
 		public static final DeferredItem<BlockItem> END_TITANIUM_ORE_ITEM        = blockItem(EOBlocks.END_TITANIUM_ORE);
+		public static final DeferredItem<BlockItem> END_THORIUM_ORE_ITEM = blockItem(EOBlocks.END_THORIUM_ORE);
+		public static final DeferredItem<BlockItem> END_SALTPETER_ORE_ITEM = blockItem(EOBlocks.END_SALTPETER_ORE);
+		public static final DeferredItem<BlockItem> END_SALT_ORE_ITEM = blockItem(EOBlocks.END_SALT_ORE);
+		public static final DeferredItem<BlockItem> END_MONAZITE_ORE_ITEM = blockItem(EOBlocks.END_MONAZITE_ORE);
+		public static final DeferredItem<BlockItem> END_FLUORITE_ORE_ITEM = blockItem(EOBlocks.END_FLUORITE_ORE);
 
 		// Holystone Ore Variants
 		public static final DeferredItem<BlockItem> HOLYSTONE_TIN_ORE_ITEM              = blockItem(EOBlocks.HOLYSTONE_TIN_ORE);
@@ -158,6 +170,11 @@ public class EOItems {
 		public static final DeferredItem<BlockItem> HOLYSTONE_IRIDIUM_ORE_ITEM          = blockItem(EOBlocks.HOLYSTONE_IRIDIUM_ORE);
 		public static final DeferredItem<BlockItem> HOLYSTONE_LITHIUM_ORE_ITEM          = blockItem(EOBlocks.HOLYSTONE_LITHIUM_ORE);
 		public static final DeferredItem<BlockItem> HOLYSTONE_TITANIUM_ORE_ITEM         = blockItem(EOBlocks.HOLYSTONE_TITANIUM_ORE);
+		public static final DeferredItem<BlockItem> HOLYSTONE_THORIUM_ORE_ITEM = blockItem(EOBlocks.HOLYSTONE_THORIUM_ORE);
+		public static final DeferredItem<BlockItem> HOLYSTONE_SALTPETER_ORE_ITEM = blockItem(EOBlocks.HOLYSTONE_SALTPETER_ORE);
+		public static final DeferredItem<BlockItem> HOLYSTONE_SALT_ORE_ITEM = blockItem(EOBlocks.HOLYSTONE_SALT_ORE);
+		public static final DeferredItem<BlockItem> HOLYSTONE_MONAZITE_ORE_ITEM = blockItem(EOBlocks.HOLYSTONE_MONAZITE_ORE);
+		public static final DeferredItem<BlockItem> HOLYSTONE_FLUORITE_ORE_ITEM = blockItem(EOBlocks.HOLYSTONE_FLUORITE_ORE);
 
 		// Vanilla Ore Variants — Nether
 		public static final DeferredItem<BlockItem> NETHER_COAL_ORE_ITEM             = blockItem(EOBlocks.NETHER_COAL_ORE);
@@ -215,6 +232,7 @@ public class EOItems {
     public static final DeferredItem<BlockItem> RAW_IRIDIUM_BLOCK_ITEM  = blockItem(EOBlocks.RAW_IRIDIUM_BLOCK);
     public static final DeferredItem<BlockItem> RAW_LITHIUM_BLOCK_ITEM  = blockItem(EOBlocks.RAW_LITHIUM_BLOCK);
     public static final DeferredItem<BlockItem> RAW_TITANIUM_BLOCK_ITEM = blockItem(EOBlocks.RAW_TITANIUM_BLOCK);
+    public static final DeferredItem<BlockItem> RAW_THORIUM_BLOCK_ITEM  = blockItem(EOBlocks.RAW_THORIUM_BLOCK);
 
 		// Everything Ores exclusive raw ore storage block
 		public static final DeferredItem<BlockItem> RAW_NEMONIUM_BLOCK_ITEM = blockItem(EOBlocks.RAW_NEMONIUM_BLOCK);
@@ -283,6 +301,7 @@ public class EOItems {
     public static final DeferredItem<Item> RAW_IRIDIUM  = item("raw_iridium");
     public static final DeferredItem<Item> RAW_LITHIUM  = item("raw_lithium");
     public static final DeferredItem<Item> RAW_TITANIUM = item("raw_titanium");
+    public static final DeferredItem<Item> RAW_THORIUM  = item("raw_thorium");
 
 		// Everything Ores exclusive raw ores
 		public static final DeferredItem<Item> RAW_NEMONIUM = item("raw_nemonium");

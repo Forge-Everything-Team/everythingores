@@ -107,6 +107,26 @@
     {
       "id": "everythingores:holystone_cassiterite_ore",
       "required": false
+    },
+    {
+      "id": "everythingores:holystone_saltpeter_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_salt_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_monazite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_thorium_ore",
+      "required": false
     }
   ]
 }

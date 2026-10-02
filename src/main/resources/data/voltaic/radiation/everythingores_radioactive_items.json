@@ -1,0 +1,22 @@
+{
+  "#c:ingots/uranium": {
+    "amount": 8.0,
+    "strength": 1.0
+  },
+  "#c:dusts/uranium": {
+    "amount": 8.0,
+    "strength": 1.0
+  },
+  "#c:plates/uranium": {
+    "amount": 8.0,
+    "strength": 1.0
+  },
+  "#c:tiny_dusts/uranium": {
+    "amount": 1.0,
+    "strength": 1.0
+  },
+  "#c:storage_blocks/uranium": {
+    "amount": 60.0,
+    "strength": 1.0
+  }
+}

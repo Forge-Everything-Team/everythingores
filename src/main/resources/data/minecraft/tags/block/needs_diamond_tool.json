@@ -95,6 +95,26 @@
     {
       "id": "everythingores:raw_nemonium_block",
       "required": false
+    },
+    {
+      "id": "everythingores:thorium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:deepslate_thorium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:nether_thorium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:end_thorium_ore",
+      "required": false
+    },
+    {
+      "id": "everythingores:holystone_thorium_ore",
+      "required": false
     }
   ]
 }
