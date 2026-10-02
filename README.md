@@ -21,7 +21,6 @@ Download from [code.visualstudio.com](https://code.visualstudio.com)
 Install these three extensions inside VS Code (`Ctrl+Shift+X`):
 - **Extension Pack for Java** — by Microsoft
 - **Gradle for Java** — by Microsoft
-- **GitLens** — by GitKraken (optional but recommended)
 
 ### Git
 Download from [git-scm.com](https://git-scm.com) if not already installed.
